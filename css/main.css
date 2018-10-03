@@ -418,7 +418,9 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 .min_heightM800 {min-height: 800px;}
 .min_heightM1000 {min-height: 1000px;}
 .h600M {height: 600px;}
+.h700M {height: 700px;}
 .max_h600M {max-height: 600px;}
+.max_h700M {max-height: 700px;}
 
 .fontSize_small_inheritM {font-size: inherit;}
 .line_height1_inheritM {line-height: inherit !important;}
