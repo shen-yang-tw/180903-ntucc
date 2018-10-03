@@ -365,6 +365,7 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 .uk-dotnav>.uk-active>*, .uk-dotnav>*>:focus, .uk-dotnav>*>:hover {background-color: rgba(255, 255, 255, 1);}
 
 .uk-pagination > li > a:hover {text-decoration: none;}
+.uk-pagination>.uk-disabled * {color: #999;}
 
 .uk-table th {color: #666;}
 
