@@ -29,8 +29,8 @@ q {font-style: normal; padding: 0 5px;}
 ---------------------------------------------------- */
 
 /* Link */
-a:not([class*=uk-slidenav]):link, a:visited, a:focus {color: #666;}
-a:not([accesskey]):hover, a:active {color: #000; text-decoration: underline;}
+a:link, a:visited, a:focus {color: #666;}
+a:hover, a:hover>span, a:active {color: #000; text-decoration: underline;}
 a:hover {transition: all 500ms ease;}
 .notransition [class*=uk-nav] a, [class*=uk-tab] a, [class*=list] a {transition: none;}
 a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 2px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;}
@@ -82,7 +82,7 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 2px so
 .underline {text-decoration: underline;}
 .hover_remove_underline:hover, .remove_underline, .remove_underline:hover {text-decoration: none !important;}
 .linkline, .linkline>span, .hover_linkline:hover {text-decoration: underline !important;}
-.linkline:hover, .linkline:hover>span, [class*="btn"], [class*=list] a {text-decoration: none !important;}
+.linkline:hover, .linkline:hover>span, [class*="btn"], [class*=list] a:not([class*=link]) {text-decoration: none !important;}
 
 /* Color */
 .color_white, .hover_color_white:focus, .hover_color_white:hover, a.color_white, .color_white>a, ul.color_white>li>a .bg_primary>a, .bg_secondary>a, .bg_primary>ul a, .bg_secondary>ul a {color: white !important;}
@@ -236,6 +236,8 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 
 .max_h {overflow: hidden; position: relative; min-height: 300px; max-height: 350px;}
 .max_h:after {content: ""; display: block; position: absolute; bottom: 0; left: 0; right: 0; height: 20px; background: linear-gradient(to top, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 100%); pointer-events: none;}
+.max_h200 {max-height: 200px;}
+.max_h400 {max-height: 400px;}
 .max_h600 {max-height: 600px;}
 
 .scroll200 {max-height: 200px; overflow-y: auto;}
@@ -342,6 +344,8 @@ textarea.noresize {resize: none;}
 /* Uikit 3 Style
 ---------------------------------------------------- */
 
+.uk-breadcrumb a:focus, .uk-breadcrumb a:hover {color: #000; text-decoration: underline;}
+
 .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {min-height: 60px;}
 .uk-navbar-nav>li.bgBlack {display: flex; align-items: center;}
 .uk-navbar-nav>li>span {font-size: 0.875rem;}
@@ -353,6 +357,8 @@ textarea.noresize {resize: none;}
 .uk-tab.borderB0::before {border-bottom: none;}
 .uk-tab.borderBGrey>.uk-active>a, .uk-tab.borderBGrey>li>a:hover {border-color: rgba(0, 0, 0, 0.5);}
 .uk-tab a:hover {text-decoration:none;}
+
+.uk-subnav-pill>*>:first-child {color: #666;}
 
 /* --- Fix lists bullets to hidden in Edge. It's a 1x1 transparent PNG image --- */
 .uk-nav, .uk-nav ul {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);}
@@ -419,6 +425,7 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 .min_heightM1000 {min-height: 1000px;}
 .h600M {height: 600px;}
 .h700M {height: 700px;}
+.max_hAuto {max-height: inherit;}
 .max_h600M {max-height: 600px;}
 .max_h700M {max-height: 700px;}
 

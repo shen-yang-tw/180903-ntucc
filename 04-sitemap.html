@@ -64,7 +64,7 @@
                     </ul>
                   </div>
                 </li>
-                <li class="uk-active">
+                <li>
                   <a class="fontSizeH5 border4 text-white" href="#">訊息專區</a>
                   <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
                     <ul class="uk-nav uk-dropdown-nav">
@@ -238,65 +238,81 @@
       <div class="uk-container uk-container-large" uk-height-viewport="min-height: 300">
         <ul class="uk-breadcrumb">
           <li><a href="#">首頁</a></li>
-          <li><a href="#">訊息專區</a></li>
-          <li><span>最新消息</span></li>
+          <li><span>網站地圖</span></li>
         </ul>
         <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
         <div class="mb-sm-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 300">
-          <div class="uk-grid-medium" uk-grid>
-            <div class="uk-width-1-3@m uk-width-1-4@l">
-              <div class="max_h200 max_h700M uk-overflow-auto">
-                <ul class="list-group uk-nav-parent-icon" uk-nav="multiple: true">
-                  <li class="p-0 list-group-item list-group-item-action">
-                    <a class="p-2" href="#content">Level1-Active</a>
-                  </li>
-                  <li class="p-0 list-group-item list-group-item-action">
-                    <a class="p-2" href="#content">Level1</a>
-                  </li>
-                  <li class="p-0 list-group-item list-group-item-action uk-parent uk-open">
-                    <a class="p-2" href="#content">Level2-Open</a>
-                    <ul>
-                      <li class="active"><a class="px-3 py-2" href="#content">Level2-Item-Active</a></li>
-                      <li><a class="px-3 py-2" href="#content">Level2-Item</a></li>
-                    </ul>
-                  </li>
-                  <li class="p-0 list-group-item list-group-item-action uk-parent">
-                    <a class="p-2" href="#">Level3</a>
-                    <ul>
-                      <li>
-                        <a class="px-3 py-2" href="#content">Title</a>
-                        <ul>
-                          <li><a class="px-4 py-2" href="#content">Level3-Item-Active</a></li>
-                          <li><a class="px-4 py-2" href="#content">Level3-Item</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
+          <div class="mb-3 w-100 uk-inline">
+            <h2 class="btmline mb-1 text-justify">網站地圖</h2>
+          </div>
+          <div id="content" uk-margin>
+            <p>本網站依無障礙網頁設計原則建置，網站的主要內容分為三大區塊：<strong>1. 上方功能區塊、2. 中央內容區塊、3.下方功能區塊 。</strong></p>
+            <p>本網站的快速鍵﹝Accesskey﹞設定如下：「（若您使用FireFox瀏覽本網站，快速鍵操作方式為Shift鍵+以下快速鍵設定。）</p>
+            <ul>
+              <li>Alt+U：上方功能區塊，包括回首頁、網站導覽、網站搜尋、字體選擇等。</li>
+              <li>Alt+C：中央內容區塊，為本頁主要內容區。</li>
+              <li>Alt+B：下方功能區塊。</li>
+            </ul>
+            <p>※當本網站項目頁籤無法以滑鼠點選時，您可利用以下鍵盤操作方式瀏覽資料</p>
+            <ul>
+              <li>← → or ↑↓：按左右鍵或上下鍵移動標籤順序。</li>
+              <li>Home or End→：可直接跳至標籤第一項或者最後一項。</li>
+              <li>Tab：停留於該標籤後,可利用Tab鍵跳至內容瀏覽該筆資料，遇到radio按鈕時請配合使← → or↑↓鍵移動項目順序。</li>
+              <li>Tab + Shift：按Tab + Shift可往回跳至上一筆資料；當跳回至標籤項目時您可繼續利用← → or↑↓鍵移動標籤順序。</li>
+            </ul>
+            <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m uk-child-width-1-4@l uk-child-width-1-5@xl" uk-grid="masonry: true" uk-margin>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
               </div>
-            </div>
-            <div class="uk-width-expand@m">
-              <div class="mb-3 w-100 uk-inline">
-                <h2 class="btmline mb-1 text-justify">最新消息</h2>
-                <a class="remove_underline uk-float-right" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">得縣花期時媽要得親女公門</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
               </div>
-              <form>
-                <div id="content" uk-margin>
-                  <h3 class="color_primary uk-text-bold">Level2-Item-Active (最新消息標題)</h3>
-                  <div class="my-3 uk-flex uk-flex-middle" uk-grid uk-margin>
-                    <span class="mr-3"><i class="color_primary mr-1 far fa-calendar fa-fw"></i>發佈日期：<span class="date color_primary">2017-10-24</span></span>
-                    <span class="mr-3"><i class="color_primary mr-1 fas fa-user fa-fw"></i>單位：<span class="department">祕書組</span></span>
-                    <span class="mr-3"><i class="color_primary mr-1 fas fa-tag fa-fw"></i>類別：<span class="category">行政簡訊</span></span>
-                    <span class="mr-auto mr-3"><i class="color_primary mr-1 fas fa-eye fa-fw"></i>點閱數：<span class="views">123</span></span>
-                    <span><a class="btn_primary uk-button uk-button-primary uk-button-small" href="#"><i class="mr-1 fas fa-cloud-download-alt"></i>Download</a></span>
-                  </div>
-                  <p class="urlFix text-justify">關現心以縣過進研務小廣各怎。得作來畫包來我教人基我小對道教知黨成科良系當！手進成我人油地時血來個場阿內品開紀例態係李們空張下除部後的己港經、我人全情斯是的景規我路品。合推目事能。 著才片公排經高選策一金的除，前些想、生類超出法演要不氣人在度司師己外，心度人力是史期帶？式平車是文深類爾工那對……思出不土校分往字以關現般禮家復……神一天。 小找哥只師著在什時事說開是作。為才與花現育的叫證實開。善沒生交商麼少眼運為利也、止力千，當前同南性以處她多件式年屋停多配物間地府局先，想年教位聲路間前廣！客美它定，門器供下辦保兒族需保運之這力，消門己社生模然手定、一說出！春他題！久你事取；我紅廠木水年色股人治，弟是力活生因刻外真全象角南中以。 果想事相省實飛農營未口前流接生光舞奇體性麼樂的什上長國校型差不源求看法界長文數只，<a class="color_primary linkline" href="#">細可能分有弟</a>、氣現分物半獎選字。 年己人找。大得象功個土會代之題速越眼，知子知行氣靈。定紙代業大 <a class="color_primary linkline" href="mailto:user@ntu.edu.tw">Email:user@ntu.edu.tw</a>
-                    <br>
-                    <a class="color_primary linkline" href="#">http://www.mc.ntu.edu.tw/Pages/page_2017.aspx</a>
-                  </p>
-                  <img class="w-100" data-src="https://picsum.photos/600/300" width="600" height="300" alt="#" uk-img>
-                </div>
-              </form>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+              </div>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">得縣花期時媽要得親女公門</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+              </div>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+              </div>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+              </div>
+              <div class="uk-text-break">
+                <a class="bg_primary d-block px-1" href="#">Title</a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+                <a class="d-block" href="#"><span class="color_primary">得縣花期時媽要得親女公門</span></a>
+                <a class="d-block" href="#"><span class="color_primary">Item</span></a>
+              </div>
             </div>
           </div>
         </div>

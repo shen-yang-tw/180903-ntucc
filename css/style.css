@@ -149,7 +149,7 @@ footer, footer a {color: white !important;}
 /* Bootstrap 4 Style
 ---------------------------------------------------- */
 
-.list-group-item.active, .list-group-item.active>a, .list-group-item .active>a {background-color: #4c5d6e; border-color: #4c5d6e; color: white;}
+.list-group-item.active, .list-group-item.active>a, .list-group-item .active>a, .list-group-item .uk-active>a {background-color: #4c5d6e; border-color: #4c5d6e; color: white;}
 
 /* End Bootstrap 4 Style
 ---------------------------------------------------- */
@@ -157,7 +157,7 @@ footer, footer a {color: white !important;}
 /* Uikit 3 Style
 ---------------------------------------------------- */
 
-.uk-pagination > .uk-active > span {background: #4c5d6e;};
+.uk-pagination > .uk-active > span, .uk-subnav-pill>.uk-active>a {background: #4c5d6e; color: #fff;};
 
 /* End Uikit 3 Style
 ---------------------------------------------------- */
