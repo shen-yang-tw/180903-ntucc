@@ -273,7 +273,8 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .item_stick:before {content: "▍"; padding-right: 5px;}
 .item_stick, .item_circle, .item_dot {margin-right: 15px;}
 .item_circle:before {content: "○"; margin-right: -1px; -moz-transform: scale(0.6) translate(-5px, 1px); -o-transform: scale(0.6) translate(-5px, 1px); -webkit-transform: scale(0.6) translate(-5px, 1px); display: inline-block; transform: scale(0.6) translate(-5px, 1px); display: inline-block;}
-.item_dot:before {content: "·"; margin-right: 12px; -moz-transform: scale(4) translate(1px, -1px); -o-transform: scale(4) translate(1px, -1px); -webkit-transform: scale(4) translate(1px, -1px); transform: scale(4) translate(1px, -1px); display: inline-block;}
+.item_dot {padding-left: 17px;}
+.item_dot:before {content: "·"; margin-left: -17px; margin-right: 12px; -moz-transform: scale(4) translate(1px, -1px); -o-transform: scale(4) translate(1px, -1px); -webkit-transform: scale(4) translate(1px, -1px); transform: scale(4) translate(1px, -1px); display: inline-block;}
 .parentheses:before {content: "("; padding-left: 1px;}
 .parentheses:after {content: ")"; padding-right: 1px;}
 .parentheses:last-child:after {padding-right: 0;}

@@ -9,7 +9,7 @@ $(window).on("scroll", function() {
 });
 
 $(window).on("load", function() {
-  $("[uk-filter] .list-group-item:first>ul>li:first").trigger('click');
+  // $("[uk-filter] .list-group-item:first>ul>li:first").trigger('click');
 });
 
 $(window).on("resize load", function() {
