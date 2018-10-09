@@ -225,7 +225,7 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .listFaIcon_indent2 {padding-left: 2rem; text-indent: -2rem;}
 .listFaIcon_indent3 {padding-left: 3rem; text-indent: -3rem;}
 .listFaIcon_indent4 {padding-left: 4rem; text-indent: -4rem;}
-[class*="_indent"] span {text-indent: 0;}
+[class*="_indent"] span, [class*="_indent"] a {text-indent: 0; padding-left: 0.25rem;}
 .indent_remove {text-indent: 0;}
 
 /* Width & Height & Scroll */
