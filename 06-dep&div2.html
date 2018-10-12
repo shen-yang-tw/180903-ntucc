@@ -28,11 +28,11 @@
       <div class="shadow-sm" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
         <nav class="uk-navbar-container uk-position-relative">
           <div class="bg_primary uk-position-cover"></div>
-          <div class="mb-lg-1 bg-white position-relative">
+          <div class="bg-white position-relative">
             <div class="px-2 px-md-4 uk-container" uk-navbar>
               <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
               <div class="uk-navbar-left">
-                <h1><a href="#" title="#" class="px-0 py-2 uk-navbar-item uk-logo"><img data-src="img/logo.svg" width="330" height="65" alt="Logo" uk-img></a></h1>
+                <h1 class="py-2"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
               </div>
               <div class="uk-visible@m uk-navbar-right">
                 <div class="h-100 uk-flex uk-flex-middle" uk-margin>
@@ -305,7 +305,7 @@
                       <div class="uk-width-expand">
                         <span class="">共<span>123</span>人</span>
                       </div>
-                      <div class="uk-width-1-2 uk-width-1-3@s uk-width-1-4@l">
+                      <div class="uk-width-auto">
                         <button class="w-100 uk-button uk-button-default" type="button">排　　序 <i class="uk-icon-caret-down"></i></button>
                         <div class="uk-dropdown-small" uk-dropdown>
                           <ul class="uk-nav uk-dropdown-nav">
@@ -491,19 +491,23 @@
             <div uk-margin>
               <a class="linkline" href="http://www.ntu.edu.tw/">臺灣大學</a>｜<a class="linkline" href="https://www.mc.ntu.edu.tw/ntucm/">臺灣大學醫學院</a>｜<a class="linkline" href="https://www.ntuh.gov.tw/">臺灣大學醫學院附設醫院</a>
               <div class="float-md-right">
-                <div class="uk-flex uk-flex-middle"><a class="remove_underline bg-dark px-2 py-1 text-white" href="#" uk-toggle="target: #sitemap">網站地圖</a><a class="wcag" href="#" title="無障礙AA標章"><img src="img/wcagAA_g.jpg" alt="無障礙AA標章" onmouseover="this.src='img/wcagAA.jpg'" onmouseout="this.src='img/wcagAA_g.jpg'"></a></div>
+                <div class="uk-flex uk-flex-middle"><a class="remove_underline bg-dark px-2 py-1 text-white" href="#" uk-toggle="target: #sitemap">網站地圖</a><a class="wcag" href="#" title="無障礙AA標章" hidden><img src="img/wcagAA_g.jpg" alt="無障礙AA標章" onmouseover="this.src='img/wcagAA.jpg'" onmouseout="this.src='img/wcagAA_g.jpg'"></a></div>
               </div>
             </div>
-            <div uk-grid uk-margin>
-              <div><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</div>
-              <div><i class="mr-1 fas fa-phone fa-fw"></i>+ 886 2 2322-0322</div>
-              <div><i class="mr-1 fas fa-envelope fa-fw"></i><a class="linkline" href="mailto:ntuccac@ntu.edu.tw">ntuccac@ntu.edu.tw</a></div>
-              <div>最後更新日期<span class="ml-1">107-09-20</span></div>
+            <div uk-margin>
+              <div class="color_primary" uk-margin>
+                <span class="bg_white mx-0 px-2"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</span>
+                <span class="bg_white mx-0 px-2"><i class="mr-1 fas fa-phone fa-fw"></i><strong>+ 886 2 2322-0322</strong></span>
+                <span class="bg_white mx-0 px-2"><i class="mr-1 fas fa-envelope fa-fw"></i><a class="linkline" href="mailto:ntuccac@ntu.edu.tw">ntuccac@ntu.edu.tw</a></span>
+              </div>
               <div uk-margin><span><i class="mr-1 fas fa-eye fa-fw"></i>當日瀏覽 <span class="bg-dark px-2 mr-3">2,806</span></span><span><i class="mr-1 fas fa-users fa-fw"></i>在線人數 <span class="bg-dark px-2 mr-3">49</span></span><span><i class="mr-1 fas fa-chart-bar fa-fw"></i>瀏覽總計 <span class="bg-dark px-2 mr-3">6,215,595</span></span></div>
-              <div><a class="linkline" href="#">隱私權保護及資訊安全政策</a></div>
-              <div>建議使用 IE11 以上或 Edge、Firefox、Chrome 瀏覽器</div>
-              <div>最佳瀏覽螢幕解析度 1920x1080</div>
-              <div>版權所有 © <span class="year"></span> 國立臺灣大學醫學院附設癌醫中心醫院</div>
+              <div uk-grid uk-margin>
+                <div>版權所有 © <span class="year"></span> 國立臺灣大學醫學院附設癌醫中心醫院</div>
+                <div><a class="linkline" href="#">隱私權保護及資訊安全政策</a></div>
+                <div>建議使用 IE11 以上或 Edge、Firefox、Chrome 瀏覽器</div>
+                <div>最佳瀏覽螢幕解析度 1920x1080</div>
+                <div>最後更新日期<span class="ml-1">107-09-20</span></div>
+              </div>
             </div>
           </div>
         </footer>
