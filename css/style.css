@@ -8,15 +8,16 @@
 /* Color */
 .color_primary, .color_primary *, .hover_color_primary:focus, .hover_color_primary:hover, ul.hover_color_primary>li>a:focus, ul.hover_color_primary>li>a:hover {color: #517394 !important;}
 a.color_primary:hover, a.color_primary:hover *, .color_primary a:hover {color: #375775 !important;}
-.color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #564e3c !important;}
-a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {color: #000000 !important;}
+.color_secondary, .color_secondary *, .hover_color_secondary:focus, .hover_color_secondary:hover, ul.hover_color_secondary>li>a:focus, ul.hover_color_secondary>li>a:hover {color: #3B9EA8 !important;}
+a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {color: #008390 !important;}
 
 /* Color & Background */
 .bg_hover_white_color_primary:focus, .bg_hover_white_color_primary:hover {color: #517394 !important; background-color: white;}
-.bg_hover_white_color_secondary:focus, .bg_hover_white_color_secondary:hover {color: #000000 !important; background-color: white;}
+.bg_hover_white_color_secondary:focus, .bg_hover_white_color_secondary:hover {color: #008390 !important; background-color: white;}
 
 .bg_primary, .btn_primary, .btn_hover_primary.uk-active, .btn_hover_primary:hover, .bg_hover_primary:hover, .hover_primary li>a:hover, .hover_primary li.uk-active>a, ul.bg_hover_primary>li>a:focus, ul.bg_hover_primary>li>a:hover, ol.listDecimalRow.listBadge>li:before {color: white !important;background-color: #4c5d6e !important;}
-.bg_secondary, .btn_secondary, .btn_hover_secondary.uk-active, .btn_hover_secondary:hover, .hover_bg_secondary:hover, .hover_secondary li>a:hover, .hover_secondary li.uk-active>a, ul.hover_bg_secondary>li>a:focus, ul.hover_bg_secondary>li>a:hover, ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {color: white;background-color: #e3dfcf !important;}
+.bg_secondary, .btn_secondary, .btn_hover_secondary.uk-active, .btn_hover_secondary:hover, .hover_bg_secondary:hover, .hover_secondary li>a:hover, .hover_secondary li.uk-active>a, ul.hover_bg_secondary>li>a:focus, ul.hover_bg_secondary>li>a:hover, ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {color: white;background-color: #3B9EA8 !important;}
+.bg_khaki {color: white;background-color: #e3dfcf !important;}
 
 /* Button & Background */
 .btn_primary:focus, .btn_primary:hover, .btn_primary.selected {background-color: #3f5271 !important;}
@@ -116,7 +117,7 @@ body {background: #F5F5F5;}
 }
 .listTabs .uk-nav>li.level3 li>a,
 .listTabs .uk-nav>li.level3[aria-expanded="true"] li[aria-expanded="true"]>a {
-  background: #e3dfcf;
+  background: #3B9EA8;
   color: white !important;
 }
 .listTabs.listTabs_grey .uk-nav a {
@@ -131,7 +132,7 @@ body {background: #F5F5F5;}
   background: #cfd8dc;
 }
 .listTabs.listTabs_secondary .uk-nav a {
-  color: #564e3c;
+  color: #3B9EA8;
 }
 .listTabs.listTabs_secondary .uk-nav li a:hover,
 .listTabs.listTabs_secondary .uk-nav>li.uk-active>a,
@@ -141,7 +142,7 @@ body {background: #F5F5F5;}
 .listTabs.listTabs_secondary .uk-nav>li[aria-expanded="true"] li[aria-expanded="false"] li>a:hover
 .nav_side.nav_side_secondary .uk-nav li a:hover,
 .nav_side.nav_side_secondary .uk-nav>li.uk-active>a {
-  background: #e3dfcf;
+  background: #3B9EA8;
 }
 
 footer, footer a {color: white !important;}

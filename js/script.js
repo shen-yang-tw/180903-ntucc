@@ -9,7 +9,7 @@ $(window).on("scroll", function() {
 });
 
 $(window).on("load", function() {
-  // $("[uk-filter] .list-group-item:first>ul>li:first").trigger('click');
+
 });
 
 $(window).on("resize load", function() {
@@ -86,5 +86,28 @@ $(window).on("resize load", function() {
   var bg_bar = $(".bg_bar").outerHeight(); //outerHeight() includes padding and border, outerHeight(true) includes the margin
   var slide = windowHeight - header - bg_bar;
   $("[uk-slideshow]>.uk-position-relative, [uk-slideshow] .uk-slideshow-items, [uk-slideshow] .uk-slideshow-items>li").css('height', slide);
+
+  //Search input & two levels of select - change parent select option to display & enable child select option
+  $("#select_dep").change(function() { //parent select
+    $('.select_div').prop('disabled', 'disabled').prop('hidden', 'hidden'); //all child select hidden
+    if ($(this).children(':first-child').is(':selected')) { //if 1st option selected
+      $('.select_div:first').prop('disabled', 'disabled').prop('hidden', false); //default first child select show & disabled
+      $("#search_input").val(""); //empty input text
+    } else {
+      $('.select_div[data-div="' + $(this).val() + '"]').prop('disabled', false).prop('hidden', false); //child select show & enabled
+      $("#search_input").val($(this).val()); //option text selected placeed into input
+    }
+  });
+  $(".select_div").change(function() { //child select
+    if ($(this).children(':first-child').is(':selected')) { //if 1st option selected
+      if ( $("#select_dep").children(':first-child').is(':selected')) { //and if 1st option of parent select selected
+        $("#search_input").val(""); //empty input text
+      } else {
+        $("#search_input").val($("#select_dep").val()); //option text of parent select selected placeed into input
+      }
+    } else {
+      $("#search_input").val($(this).val()); //not 1st option text of child select selected placeed into input
+    }
+  });
 
 });
