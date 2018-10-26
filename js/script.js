@@ -100,7 +100,7 @@ $(window).on("resize load", function() {
   });
   $(".select_div").change(function() { //child select
     if ($(this).children(':first-child').is(':selected')) { //if 1st option selected
-      if ( $("#select_dep").children(':first-child').is(':selected')) { //and if 1st option of parent select selected
+      if ($("#select_dep").children(':first-child').is(':selected')) { //and if 1st option of parent select selected
         $("#search_input").val(""); //empty input text
       } else {
         $("#search_input").val($("#select_dep").val()); //option text of parent select selected placeed into input
@@ -108,6 +108,27 @@ $(window).on("resize load", function() {
     } else {
       $("#search_input").val($(this).val()); //not 1st option text of child select selected placeed into input
     }
+  });
+
+  //Set the height of .list images equal to its width
+  $("[class*=uk-visible][uk-tab]>li>a, [class*=uk-hidden]>[uk-dropdown] a").click(function() {
+    if ($(window).width() <= 639) {
+      var w = $(".list[uk-grid]").parent().width() -10;
+    }
+    if ($(window).width() >= 640 && $(window).width() <= 1219) {
+      var w = $(".list[uk-grid]").parent().width() / 2 -10;
+    }
+    if ($(window).width() >= 1200 && $(window).width() <= 1599) {
+      var w = $(".list[uk-grid]").parent().width() / 3 -10;
+    }
+    if ($(window).width() >= 1600) {
+      var w = $(".list[uk-grid]").parent().width() / 4 -10;
+    }
+    $(".thisRatio1_1").each(function() {
+      $(this).css({
+        height: w
+      });
+    });
   });
 
 });

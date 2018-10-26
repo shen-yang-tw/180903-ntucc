@@ -221,16 +221,19 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .list_vline>li:not(:last-child):after {content: "│"; padding: 0 2px;}
 .list_btmline>li:not(:last-child) {border-bottom: 1px solid #E5E5E5; padding: 0 10px; padding-bottom: 5px; margin-bottom: 5px;}
 
-.listFaIcon_indent {padding-left: 1.25rem; text-indent: -1.25rem;}
+/* Indent */
+.listFaIcon_indent {padding-left: 1.25rem; text-indent: -1.25rem;} /*work with fa-fw & no margin*/
 .listFaIcon_indent2 {padding-left: 2rem; text-indent: -2rem;}
 .listFaIcon_indent3 {padding-left: 3rem; text-indent: -3rem;}
 .listFaIcon_indent4 {padding-left: 4rem; text-indent: -4rem;}
-[class*="_indent"] span, [class*="_indent"] a {text-indent: 0; padding-left: 0.25rem;}
+[class*=_indent] span, [class*=_indent] a {text-indent: 0; padding-left: 0.25rem;}
+[class*=uk-table] td.listFaIcon_indent {padding-left: calc(1.25rem + 12px) !important;}
 .indent_remove {text-indent: 0;}
 
 /* Width & Height & Scroll */
 .fullWidth {width: 100%;}
 .min_height100vh {min-height: 100vh}
+.min_height100 {min-height: 100px;}
 .min_height300 {min-height: 300px;}
 .h600 {height: 600px;}
 
@@ -266,10 +269,11 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .urlFix a {display: inline;}
 
 /* Pseudo */
-.afterVLine:after {content: "│";}
+.afterVLine:not(:last-child):after {content: "│"; padding-left: 5px;}
+.afterSlash:not(:last-child):after {content: "/"; padding-left: 5px;}
 .comma:not(:last-child):after {content: ","; padding-right: 10px;}
 .commaCH:not(:last-child):after {content: "、";}
-.comma_dot:not(:last-child):after {content: "·"; margin-left: 5px; margin-right: 10px; -moz-transform: scale(1.5) translate(1px, -1px); -o-transform: scale(1.5) translate(1px, -1px); -webkit-transform: scale(1.5) translate(1px, -1px); display: inline-block; transform: scale(1.5) translate(1px, -1px); display: inline-block;}
+.comma_dot:not(:last-child):after {content: "·"; margin-left: 5px; margin-right: 5px; -moz-transform: scale(2) translate(1px, -1px); -o-transform: scale(2) translate(1px, -1px); -webkit-transform: scale(2) translate(1px, -1px); display: inline-block; transform: scale(2) translate(1px, -1px); display: inline-block;}
 .item_stick:before {content: "▍"; padding-right: 5px;}
 .item_stick, .item_circle, .item_dot {margin-right: 15px;}
 .item_circle:before {content: "○"; margin-right: -1px; -moz-transform: scale(0.6) translate(-5px, 1px); -o-transform: scale(0.6) translate(-5px, 1px); -webkit-transform: scale(0.6) translate(-5px, 1px); display: inline-block; transform: scale(0.6) translate(-5px, 1px); display: inline-block;}
