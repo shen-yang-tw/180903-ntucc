@@ -357,6 +357,7 @@ textarea.noresize {resize: none;}
 .uk-tab.borderB0::before {border-bottom: none;}
 .uk-tab.borderBGrey>.uk-active>a, .uk-tab.borderBGrey>li>a:hover {border-color: rgba(0, 0, 0, 0.5);}
 .uk-tab a:hover {text-decoration:none;}
+.uk-tab>*>a {text-transform: inherit;}
 
 .uk-subnav-pill>*>:first-child {color: #666;}
 
