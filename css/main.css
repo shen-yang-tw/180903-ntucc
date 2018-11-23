@@ -226,7 +226,8 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .listFaIcon_indent2 {padding-left: 2rem; text-indent: -2rem;}
 .listFaIcon_indent3 {padding-left: 3rem; text-indent: -3rem;}
 .listFaIcon_indent4 {padding-left: 4rem; text-indent: -4rem;}
-[class*=_indent] span, [class*=_indent] a {text-indent: 0; padding-left: 0.25rem;}
+.hanging_indent {padding-left: 1.5rem; text-indent: -1.5rem;}
+[class*=_indent]>* {text-indent: 0; padding-left: 0.25rem;}
 [class*=uk-table] td.listFaIcon_indent {padding-left: calc(1.25rem + 12px) !important;}
 .indent_remove {text-indent: 0;}
 
@@ -357,7 +358,7 @@ textarea.noresize {resize: none;}
 .uk-tab.borderB0::before {border-bottom: none;}
 .uk-tab.borderBGrey>.uk-active>a, .uk-tab.borderBGrey>li>a:hover {border-color: rgba(0, 0, 0, 0.5);}
 .uk-tab a:hover {text-decoration:none;}
-.uk-tab>*>a {text-transform: inherit;}
+[class*=uk-] * {text-transform: inherit !important;}
 
 .uk-subnav-pill>*>:first-child {color: #666;}
 
