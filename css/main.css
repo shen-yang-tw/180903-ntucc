@@ -400,6 +400,8 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 .uk-form-custom.select_show .uk-input, .uk-form-custom.select_show .uk-select, .uk-form-custom.select_show .uk-textarea {opacity: 1;}
 .uk-form-custom.select_show {width: 100%; height: 100%;}
 
+.uk-text-truncate > * {display: inline;}
+
 /* End Uikit 3 Style
 ---------------------------------------------------- */
 
