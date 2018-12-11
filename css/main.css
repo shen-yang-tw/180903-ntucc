@@ -111,14 +111,16 @@ input.color_white::-ms-input-placeholder, textarea.color_white::-ms-input-placeh
 .bg_white, .bg_hover_white {background-color: white !important;}
 input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:before {background: #fafafa !important;}
 
-.bg_whiteOpacity3 {background-color: rgba(255, 255, 255, 0.3);}
-.bg_whiteOpacity5, .bg_hover_whiteOpacity5:focus, .bg_hover_whiteOpacity5:hover {background-color: rgba(255, 255, 255, 0.5) !important;}
-.bg_whiteOpacity7 {background-color: rgba(255, 255, 255, 0.7) !important;}
-.bg_whiteOpacity8 {background-color: rgba(255, 255, 255, 0.8) !important;}
-.bg_whiteOpacity9 {background-color: rgba(255, 255, 255, 0.9) !important;}
-.bg_blackOpacity3 {background-color: rgba(0, 0, 0, 0.3);}
-.bg_blackOpacity5 {background-color: rgba(0, 0, 0, 0.5);}
-.bg_blackOpacity7 {background-color: rgba(0, 0, 0, 0.7);}
+.bg_whiteOpacity3, .bg_hover_whiteOpacity3:hover {background-color: rgba(255, 255, 255, 0.3);}
+.bg_whiteOpacity5, .bg_hover_whiteOpacity5:hover {background-color: rgba(255, 255, 255, 0.5) !important;}
+.bg_whiteOpacity7, .bg_hover_whiteOpacity7:hover {background-color: rgba(255, 255, 255, 0.7) !important;}
+.bg_whiteOpacity8, .bg_hover_whiteOpacity8:hover {background-color: rgba(255, 255, 255, 0.8) !important;}
+.bg_whiteOpacity9, .bg_hover_whiteOpacity9:hover {background-color: rgba(255, 255, 255, 0.9) !important;}
+.bg_blackOpacity05, .bg_hover_blackOpacity05:hover {background-color: rgba(0, 0, 0, 0.05) !important;}
+.bg_blackOpacity1, .bg_hover_blackOpacity1:hover {background-color: rgba(0, 0, 0, 0.1) !important;}
+.bg_blackOpacity3, .bg_hover_blackOpacity3:hover {background-color: rgba(0, 0, 0, 0.3) !important;}
+.bg_blackOpacity5, .bg_hover_blackOpacity5:hover {background-color: rgba(0, 0, 0, 0.5);}
+.bg_blackOpacity7, .bg_hover_blackOpacity7:hover {background-color: rgba(0, 0, 0, 0.7);}
 
 .bg_grey, .btn_grey {background-color: #e9f3f5 !important;}
 .btn_grey:focus, .btn_grey:hover {background-color: #e3edef;}
@@ -188,6 +190,7 @@ img[src=""] {display: none;}
 .left10 {left: 10px !important;}
 .right5 {right: 5px !important;}
 .right10 {right: 10px !important;}
+.translate_top {transform: translate(-50%,0);}
 
 .pull_y100 {position: relative; top: -100px; margin-bottom: -100px;}
 
@@ -364,6 +367,9 @@ textarea.noresize {resize: none;}
 
 /* --- Fix lists bullets to hidden in Edge. It's a 1x1 transparent PNG image --- */
 .uk-nav, .uk-nav ul {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);}
+.uk-nav-header>a::before {content: "•"; padding-right: 6px;}
+.uk-nav-header>a:hover {text-decoration: none !important;}
+.uk-nav-header>a::after {content: ""; display: block; border-bottom: 1px dotted grey;}
 
 a[class*=uk-slidenav] {color: rgba(255, 255, 255, 0.5) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;}
 a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-slidenav:hover {color: rgba(255, 255, 255, 1) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;}
