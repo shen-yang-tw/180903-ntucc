@@ -370,6 +370,7 @@ textarea.noresize {resize: none;}
 .uk-nav-header>a::before {content: "•"; padding-right: 6px;}
 .uk-nav-header>a:hover {text-decoration: none !important;}
 .uk-nav-header>a::after {content: ""; display: block; border-bottom: 1px dotted grey;}
+.uk-nav-header>a:hover::after {content: ""; display: block; border-bottom: 1px solid black;}
 
 a[class*=uk-slidenav] {color: rgba(255, 255, 255, 0.5) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.7) !important;}
 a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-slidenav:hover {color: rgba(255, 255, 255, 1) !important; text-shadow: 0 0 5px rgba(0, 0, 0, 0.5) !important;}
