@@ -149,6 +149,10 @@ body {background: #F5F5F5;}
   background: #3B9EA8;
 }
 
+#slideshow .uk-slideshow-items>li:first-child img.uk-cover {top:0; transform: translate(-50%,0);}
+
+#content ul li *, #content ol li * {display: inherit;}
+
 footer, footer a {color: white !important;}
 
 /* Bootstrap 4 Style
