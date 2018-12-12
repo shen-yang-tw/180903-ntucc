@@ -367,7 +367,6 @@ textarea.noresize {resize: none;}
 
 /* --- Fix lists bullets to hidden in Edge. It's a 1x1 transparent PNG image --- */
 .uk-nav, .uk-nav ul {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);}
-.uk-nav-header>a::before {content: "•"; padding-right: 6px;}
 .uk-nav-header>a:hover {text-decoration: none !important;}
 .uk-nav-header>a::after {content: ""; display: block; border-bottom: 1px dotted grey;}
 .uk-nav-header>a:hover::after {content: ""; display: block; border-bottom: 1px solid black;}
