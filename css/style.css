@@ -212,9 +212,9 @@ footer, footer a {color: white !important;}
 
 /* ----------- IE10+ ----------- */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-.height_fixIE {
-  height: 100%;
-}
+.height_fixIE {height: 100%;}
+.uk-dropdown-nav li>* {display: block !important;}
+
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
