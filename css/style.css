@@ -152,6 +152,7 @@ body {background: #F5F5F5;}
 #slideshow .uk-slideshow-items>li:first-child img.uk-cover {top:0; transform: translate(-50%,0);}
 
 .ckeditor ol, .ckeditor ul {padding-left: 30px;}
+.ckeditor ol li *, .ckeditor ul li * {display: inline;}
 
 footer, footer a {color: white !important;}
 
