@@ -15,9 +15,9 @@ h3, .fontSizeH3 {font-size: 1.5rem !important;} /* 24px */
 h4, .fontSizeH4 {font-size: 1.3125rem !important;} /* 21px */
 h5, .fontSizeH5 {font-size: 1.125rem !important;} /* 18px */
 h6, .fontSizeH6 {font-size: 1rem !important;} /* 16px */
-.h1vw {font-size: 6vw !important;}
-.fontSizeM .h1vw {font-size: 6.1vw !important;}
-.fontSizeL .h1vw {font-size: 6.2vw !important;}
+.h1vw {font-size: 5vw !important;}
+.fontSizeM .h1vw {font-size: 5.1vw !important;}
+.fontSizeL .h1vw {font-size: 5.2vw !important;}
 h1, h2, h3, h4, h5, h6 {line-height: 1.2 !important;}
 small {font-size: 0.875rem !important;} /* 14px */
 p:not([class*=bg_]), h1:not([class*=bg_]), h2:not([class*=bg_]), h3:not([class*=bg_]), h4:not([class*=bg_]), h5:not([class*=bg_]), h6:not([class*=bg_]) {line-height: 1.5;}

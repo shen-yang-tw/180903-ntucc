@@ -154,6 +154,9 @@ body {background: #F5F5F5;}
 .ckeditor ol, .ckeditor ul {padding-left: 30px;}
 .ckeditor ol li *, .ckeditor ul li * {display: inline;}
 
+.index .uk-navbar-toggle-icon>svg {min-width: 30px;}
+.index .uk-slideshow-items h2.fontSizeH5 {font-size: 0.9rem !important;}
+
 footer, footer a {color: white !important;}
 #footer {background: linear-gradient(to bottom, #899db1 0%, #435261 100%);}
 /* #footer>div:first-child {background-color: #4c5d6e;
@@ -185,6 +188,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /*uk-@s*/
 @media (min-width:640px) {
+.index .uk-slideshow-items h2.fontSizeH5 {font-size: inherit !important;}
 }
 
 /*bs-md*/
