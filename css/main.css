@@ -381,6 +381,15 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 .uk-pagination > li > a:hover {text-decoration: none;}
 .uk-pagination>.uk-disabled * {color: #999;}
 
+.uk-disabled[class*=button] {background: lightgray !important;}
+
+.accordion_iconL.uk-accordion-title::before {float: none; display: inline-block; vertical-align: bottom; margin-bottom: 2px; margin-right: 5px;}
+.accordion_iconR.uk-accordion-title::before {float: none;}
+.accordion_iconR.uk-accordion-title::after {content: ""; display: inline-block; vertical-align: bottom; width: 1.4em; height: 1.4em; margin-left: 5px; margin-bottom: 2px; background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj4KICAgIDxyZWN0IGZpbGw9IiM2NjYiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxIiB4PSIwIiB5PSI2Ij48L3JlY3Q+CiAgICA8cmVjdCBmaWxsPSIjNjY2IiB3aWR0aD0iMSIgaGVpZ2h0PSIxMyIgeD0iNiIgeT0iMCI+PC9yZWN0Pgo8L3N2Zz4="); background-repeat: no-repeat; background-position: 50% 50%;}
+.uk-open>.accordion_iconR.uk-accordion-title::after {background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDEzIDEzIj4KICAgIDxyZWN0IGZpbGw9IiM2NjYiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxIiB4PSIwIiB5PSI2Ij48L3JlY3Q+Cjwvc3ZnPg=="); background-repeat: no-repeat; background-position: 50% 50%;}
+.accordion_iconR_arrow.uk-accordion-title::after {background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkYXRhLXN2Zz0iY2hldnJvbi1yaWdodCI+PHBvbHlsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjAzIiBwb2ludHM9IjcgNCAxMyAxMCA3IDE2Ij48L3BvbHlsaW5lPjwvc3ZnPg=="); margin-bottom: -1px;}
+.uk-open>.accordion_iconR_arrow.uk-accordion-title::after {background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkYXRhLXN2Zz0iY2hldnJvbi1kb3duIj48cG9seWxpbmUgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuMDMiIHBvaW50cz0iMTYgNyAxMCAxMyA0IDciPjwvcG9seWxpbmU+PC9zdmc+");}
+
 .uk-table th {color: #666;}
 @media (max-width: 1119px) {
 .uk-table-responsive.table_responsive_l thead {display: none;}
