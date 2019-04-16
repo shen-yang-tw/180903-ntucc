@@ -416,6 +416,7 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 /* IE Style
 ---------------------------------------------------- */
 .uk-grid>th, .uk-grid>td {display: block;}
+.table_responsive_xl .uk-accordion-content .uk-button {padding: 0 20px;}
 
 /* End IE Style
 ---------------------------------------------------- */
