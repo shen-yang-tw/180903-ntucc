@@ -413,6 +413,13 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 /* End Uikit 3 Style
 ---------------------------------------------------- */
 
+/* IE Style
+---------------------------------------------------- */
+.uk-grid>th, .uk-grid>td {display: block;}
+
+/* End IE Style
+---------------------------------------------------- */
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Style */
 
 
