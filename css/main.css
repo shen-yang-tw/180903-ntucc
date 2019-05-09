@@ -415,8 +415,6 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 
 /* IE Style
 ---------------------------------------------------- */
-.uk-grid>th, .uk-grid>td {display: block;}
-.uk-grid>td.uk-width-1-1 {flex-basis: 100%;}
 
 /* End IE Style
 ---------------------------------------------------- */
@@ -508,5 +506,6 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 
 /*IE*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    
+.uk-grid>th[class*=uk-width-], .uk-grid>td[class*=uk-width-] {display: block;}
+.uk-table-responsive .uk-grid>td.uk-width-1-1 {flex-basis: 100%;}
 }
