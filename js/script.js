@@ -85,7 +85,9 @@ $(window).on("resize load", function() {
   var header = $("header").height();
   var bg_bar = $(".bg_bar").outerHeight(); //outerHeight() includes padding and border, outerHeight(true) includes the margin
   var slide = windowHeight - header - bg_bar;
-  $("[uk-slideshow]>.uk-position-relative, [uk-slideshow] .uk-slideshow-items, [uk-slideshow] .uk-slideshow-items>li").css('height', slide);
+  if ($(window).width() >= 960) {
+    $("[uk-slideshow]>.uk-position-relative, [uk-slideshow] .uk-slideshow-items, [uk-slideshow] .uk-slideshow-items>li").css('height', slide);
+  }
 
   //Search input & two levels of select - change parent select option to display & enable child select option
   $("#select_dep").change(function() { //parent select
