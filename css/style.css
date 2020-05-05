@@ -163,6 +163,10 @@ body {background: #F5F5F5;}
 .index .uk-navbar-toggle-icon>svg {min-width: 30px;}
 .index .uk-slideshow-items h2.fontSizeH5 {font-size: 0.9rem !important;}
 
+.ckeditor [style*="標楷體"] {
+  font-family: 標楷體 !important;
+}
+
 footer, footer a {color: white !important;}
 #footer {background: linear-gradient(to bottom, #899db1 0%, #435261 100%);}
 /* #footer>div:first-child {background-color: #4c5d6e;
