@@ -1,3 +1,22 @@
+//Slideshow tab focus
+function slideShowFocus(slideshow, tabsArray, thisFocus) {
+  var slideshow = document.querySelector(slideshow)
+  var tabs = document.querySelectorAll(tabsArray)
+  for (var i = 0; i < tabs.length; i++) {
+    // tabs[i] = UIkit.slideshow(slideshow).show(i)
+    if (thisFocus == tabs[i]) {
+      UIkit.slideshow(slideshow).show(i)
+    }
+  }
+}
+
+function enterOpenUrl(targetWindow, thisKeyDown, event) {
+  if (event.keyCode === 13) {
+    window.open(thisKeyDown.getAttribute('href'), targetWindow)
+  }
+}
+
+
 //Gototop fadeIn & fadeOut on scrollTop / scroll
 $("[uk-totop]").hide();
 $(window).on("scroll", function() {

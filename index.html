@@ -18,6 +18,12 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/delay&duration.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.3.1.min.js "></script>
+  <script src="js/bootstrap.bundle.min.js "></script>
+  <script src="js/uikit.min.js "></script>
+  <script src="js/uikit-icons.min.js "></script>
+  <script src="js/fontawesome-5.3.1-all.min.js "></script>
+  <script src="js/script.js "></script>
 </head>
 
 <body id="top" class="index uk-background-cover uk-background-top-center" uk-height-viewport>
@@ -262,9 +268,12 @@
         <a class="px-lg-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next"></a>
         <div class="uk-position-bottom-center uk-position-small">
           <ul class="uk-dotnav">
-            <li uk-slideshow-item="0"><a href="#">Banner1</a></li>
-            <li uk-slideshow-item="1"><a href="#">Banner2</a></li>
-            <li uk-slideshow-item="2"><a href="#">Banner3</a></li>
+            <li uk-slideshow-item="0"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_blank', this, event)">Banner1</a>
+            </li>
+            <li uk-slideshow-item="1"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner2</a>
+            </li>
+            <li uk-slideshow-item="2"><a href="#" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_self', this, event)">Banner3</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -292,52 +301,52 @@
         <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
         <div class="uk-grid-small uk-grid-match uk-child-width-expand@s" uk-grid>
           <div>
-            <a href="#" title="最新消息">
-              <div class="pt-2 h-100 uk-card uk-card-default uk-card-hover">
-                <div class="uk-card-media-top">
-                  <div class="uk-position-top uk-text-center">
-                    <div class="bg_secondary opacity90 uk-position-cover"></div>
-                    <h4 class="position-relative m-0 p-2 text-white uk-flex uk-flex-middle"><img class="mr-1" src="img/icon_leaf.svg" width="25">最新消息</h4>
-                  </div>
-                </div>
-                <div class="pt-5 pb-3 uk-card-body">
-                  <p class="position-relative text-left">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天<i class="pl-2 uk-float-right fas fa-angle-right fa-fw" data-fa-transform="down-4"></i><small class="uk-float-right">More</small></p>
-                  <p class="position-relative text-left">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天<i class="pl-2 uk-float-right fas fa-angle-right fa-fw" data-fa-transform="down-4"></i></p>
+            <div class="pt-2 h-100 uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <div class="uk-position-top uk-text-center">
+                  <div class="bg_secondary opacity90 uk-position-cover"></div>
+                  <h4 class="position-relative m-0 p-2 text-white uk-flex uk-flex-middle">
+                    <img class="mr-1" src="img/icon_leaf.svg" width="25">最新消息
+                    <a class="text-white mb-2 mr-2 uk-position-bottom-right" href=""><span class="sr-only">RSS訂閱</span><i class="fas fa-rss-square"></i></a>
+                  </h4>
                 </div>
               </div>
-            </a>
+              <div class="py-5 p-3 uk-card-body" uk-margin>
+                <a class="position-relative text-left mr-0" href="#">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天</a>
+                <a class="position-relative text-left mr-0" href="#">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天</a>
+                <a class="fontSize08 mb-3 mr-3 uk-position-bottom-right" href="">更多最新消息<i class="pl-2 fas fa-angle-right fa-fw"></i></a>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#" title="最新消息">
-              <div class="pt-2 h-100 uk-card uk-card-default uk-card-hover">
-                <div class="uk-card-media-top">
-                  <div class="uk-position-top uk-text-center">
-                    <div class="bg_secondary opacity90 uk-position-cover"></div>
-                    <h4 class="position-relative m-0 p-2 text-white uk-flex uk-flex-middle"><img class="mr-1" src="img/icon_leaf.svg" width="25">就醫資訊</h4>
-                  </div>
-                </div>
-                <div class="pt-5 pb-3 uk-card-body">
-                  <p class="position-relative text-left">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果<i class="pl-2 uk-float-right fas fa-angle-right fa-fw" data-fa-transform="down-4"></i></p>
-                  <p class="position-relative text-left">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果<i class="pl-2 uk-float-right fas fa-angle-right fa-fw" data-fa-transform="down-4"></i></p>
+            <div class="pt-2 h-100 uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <div class="uk-position-top uk-text-center">
+                  <div class="bg_secondary opacity90 uk-position-cover"></div>
+                  <h4 class="position-relative m-0 p-2 text-white uk-flex uk-flex-middle"><img class="mr-1" src="img/icon_leaf.svg" width="25">就醫資訊</h4>
                 </div>
               </div>
-            </a>
+              <div class="py-5 p-3 uk-card-body" uk-margin>
+                <a class="position-relative text-left mr-0" href="#">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果
+                <a class="position-relative text-left mr-0" href="#">得縣花期時媽要得親女公門……跟是的產傳孩痛：臉們老，張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果
+                <a class="fontSize08 mb-3 mr-3 uk-position-bottom-right" href="">更多就醫資訊<i class="pl-2 fas fa-angle-right fa-fw"></i></a>
+              </div>
+            </div>
           </div>
           <div>
-            <a href="#" title="最新消息">
-              <div class="pt-2 h-100 uk-card uk-card-default uk-card-hover">
-                <div class="uk-card-media-top">
-                  <div class="uk-position-top uk-text-center">
-                    <div class="bg_secondary opacity90 uk-position-cover"></div>
-                    <h4 class="position-relative m-0 p-2 text-white uk-flex uk-flex-middle"><img class="mr-1" src="img/icon_leaf.svg" width="25">門診訊息</h4>
-                  </div>
-                </div>
-                <div class="pt-5 pb-3 uk-card-body">
-                  <p class="position-relative text-left">得縣花期時媽要得親女公門張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果<i class="pl-2 uk-float-right fas fa-angle-right fa-fw" data-fa-transform="down-4"></i></p>
-                  <p class="position-relative text-left">得縣花期時媽要得親女公門張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果<i class="pl-2 uk-float-right fas fa-angle-right fa-fw" data-fa-transform="down-4"></i></p>
+            <div class="pt-2 h-100 uk-card uk-card-default uk-card-hover">
+              <div class="uk-card-media-top">
+                <div class="uk-position-top uk-text-center">
+                  <div class="bg_secondary opacity90 uk-position-cover"></div>
+                  <h4 class="position-relative m-0 p-2 text-white uk-flex uk-flex-middle"><img class="mr-1" src="img/icon_leaf.svg" width="25">門診訊息</h4>
                 </div>
               </div>
-            </a>
+              <div class="py-5 p-3 uk-card-body" uk-margin>
+                <a class="position-relative text-left mr-0" href="#"><time class="pr-3 uk-text-bold">2020-09-03</time>得縣花期時媽要得親女公門張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果</a>
+                <a class="position-relative text-left mr-0" href="#"><time class="pr-3 uk-text-bold">2020-09-03</time>得縣花期時媽要得親女公門張樣進智上天，期調還，灣安時裡系……狀平再！現似光財；是就星國王賽商果</a>
+                <a class="fontSize08 mb-3 mr-3 uk-position-bottom-right" href="">更多門診訊息<i class="pl-2 fas fa-angle-right fa-fw"></i></a>
+              </div>
+            </div>
           </div>
         </div>
         <hr class="border_black_opacity2 mt-5 uk-margin-bottom">
@@ -446,12 +455,26 @@
   </div>
   <!-- offcanvas-content -->
 
-  <script src="js/jquery-3.3.1.min.js "></script>
-  <script src="js/bootstrap.bundle.min.js "></script>
-  <script src="js/uikit.min.js "></script>
-  <script src="js/uikit-icons.min.js "></script>
-  <script src="js/fontawesome-5.3.1-all.min.js "></script>
-  <script src="js/script.js "></script>
+  <div id="news-modal" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <div class="uk-modal-header">
+        <h2 class="uk-modal-title">最新消息</h2>
+      </div>
+      <div class="uk-modal-body">
+        <time>2020-08-11</time>
+        <p class="mt-1">【講座訊息】109年10月13日康復癌友加油站 熱烈報名中</p>
+      </div>
+      <div class="uk-modal-footer uk-text-center">
+        <button class="uk-button uk-button-default uk-modal-close" type="button">關閉</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      UIkit.modal('#news-modal').show()
+    }
+  </script>
 </body>
 
 </html>

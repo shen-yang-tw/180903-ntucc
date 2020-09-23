@@ -4,9 +4,9 @@
 *:not(.glyphicon) {font-family: '微軟正黑體', 'Microsoft JhengHei', 'PingFang TC', 'Heiti TC', 'Microsoft YaHei', Helvetica, Arial, Verdana, sans-serif !important;}
 * {text-shadow: none !important;}
 [class*=fa-] {font-family: FontAwesome !important;}
-html {font-size: 16px !important;}
-html.fontSizeM {font-size: 18px !important;}
-html.fontSizeL {font-size: 20px !important;}
+html {font-size: calc(16rem/16) !important;}
+html.fontSizeM {font-size: calc(18rem/16) !important;}
+html.fontSizeL {font-size: calc(20rem/16) !important;}
 body {color: #666; background-color: #e9f3f5; line-height: 1.5 !important;}
 body {font-size: 1rem !important;} /* 1rem x 16px = 16px , line-height=1.5 */
 h1 {font-size: 1.875rem !important;} /* 30px / 16px = 1.625rem */
@@ -33,7 +33,14 @@ a:link, a:visited, a:focus {color: #666;}
 a:hover, a:hover>span, a:active {color: #000; text-decoration: underline;}
 a:hover {transition: all 500ms ease;}
 .notransition [class*=uk-nav] a, [class*=uk-tab] a, [class*=list] a {transition: none;}
-a:focus, button:focus, input:focus, select:focus, textarea:focus {border: 2px solid rgba(30, 135, 240, 0.85) !important; -webkit-box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important; box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;}
+a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    box-shadow: none !important;
+    outline-width: 0 !important;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(30, 135, 240, 0.85) !important;
+    outline-color: rgba(30, 135, 240, 0.85) !important;
+    outline-style: dashed !important;
+    outline-width: 2px !important;
+}
 
 /* Google Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
@@ -197,7 +204,7 @@ img[src=""] {display: none;}
 /* Margin */
 a:not(:last-child):not(:only-of-type):not([class*=uk-position-]), span:not(:last-child):not(:only-of-type):not([class*=uk-position-]), .child_margin a:not(:last-child):not([class*=uk-position-]) {margin-right: 5px;}
 a:not([class*="mr"]):not([class*="-margin"]):last-child, span:not([class*="mr"]):not([class*="-margin"]):last-child {margin-right: 0 !important;}
-*:last-child:not([class*=mb-]):not([class*=uk-position-]) {margin-bottom: 0 !important;}
+*:last-child:not([class*=mb-]):not([class*=uk-position-]):not([class*=uk-margin-]) {margin-bottom: 0 !important;}
 
 /* List */
 ol, ul {padding-left: 1em;}
@@ -236,6 +243,42 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 
 /* Width & Height & Scroll */
 .fullWidth {width: 100%;}
+.min_width-200 {
+    min-width: 200px;
+}
+@media (min-width:640px) {
+    .min_width-200\@s {
+        min-width: 200px;
+    }
+    .min_width-200\!\@s {
+        min-width: 200px !important;
+    }
+}
+@media (min-width:960px) {
+    .min_width-200\@m {
+        min-width: 200px;
+    }
+    .min_width-200\!\@m {
+        min-width: 200px !important;
+    }
+}
+@media (min-width:1200px) {
+    .min_width-200\@l {
+        min-width: 200px;
+    }
+    .min_width-200\!\@l {
+        min-width: 200px !important;
+    }
+}
+@media (min-width:1600px) {
+    .min_width-200\@xl {
+        min-width: 200px;
+    }
+    .min_width-200\!\@xl {
+        min-width: 200px !important;
+    }
+}
+  
 .min_height100vh {min-height: 100vh}
 .min_height100 {min-height: 100px;}
 .min_height300 {min-height: 300px;}
@@ -362,6 +405,24 @@ textarea.noresize {resize: none;}
 .uk-tab.borderBGrey>.uk-active>a, .uk-tab.borderBGrey>li>a:hover {border-color: rgba(0, 0, 0, 0.5);}
 .uk-tab a:hover {text-decoration:none;}
 [class*=uk-] * {text-transform: inherit !important;}
+
+.list_tab-button::before {
+    border-bottom: 1px solid #f8f8f8;
+}
+.list_tab-button, .list_tab-button>* {
+    padding-left: 10px;
+}
+.list_tab-button>*>a {
+    background: #f8f8f8;
+    padding: 5px 30px;
+}
+.list_tab-button>.uk-active>a, .list_tab-button>*>a:hover {
+    border: none;
+    background: #3b9ea8;
+}
+.list_tab-button.list_tab-button-txt-white>.uk-active>a, .list_tab-button.list_tab-button-txt-white>*>a:hover {
+    color: white;
+}
 
 .uk-subnav-pill>*>:first-child {color: #666;}
 
