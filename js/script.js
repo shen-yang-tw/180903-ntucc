@@ -10,6 +10,46 @@ function slideShowFocus(slideshow, tabsArray, thisFocus) {
   }
 }
 
+function toggleCheckAll(thisClick, inputClass) {
+  //thisClick means the "owner" and CANNOT use "this" that means the Global object "Window"
+  thisClick.classList.toggle('checked')
+  var i,
+    el = document.querySelectorAll(inputClass)
+  //--set all input checked & unchecked--
+  if (thisClick.classList.contains('checked')) {
+    //if 'select all' checked
+    for (i = 0; i < el.length; i++) {
+      el[i].checked = true
+      el[i].offsetParent.classList.add('checked')
+      //parent el<li> add class "checked" when input checked
+    }
+  } else {
+    //if 'select all' unchecked
+    for (i = 0; i < el.length; i++) {
+      el[i].checked = false
+      el[i].offsetParent.classList.remove('checked')
+      //parent el<li> remove class "checked" when input unchecked
+    }
+  }
+}
+
+function toggleAllShow(allChildren) {
+  //if (elID.getAttribute("aria-hidden") == "true"))
+  console.log(allChildren.length)
+  for (var i = 0; i < allChildren.length; i++) {
+    if (allChildren[i].hasAttribute('hidden')) {
+      allChildren[i].removeAttribute('hidden')
+    } else {
+      allChildren[i].setAttribute('hidden', true)
+    }
+  }
+}
+
+function findChildren(parentEL, sl) {
+  return parentEL.querySelectorAll(sl)
+}
+
+
 function enterOpenUrl(targetWindow, thisKeyDown, event) {
   if (event.keyCode === 13) {
     window.open(thisKeyDown.getAttribute('href'), targetWindow)
