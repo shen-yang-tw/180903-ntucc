@@ -601,7 +601,7 @@ textarea.noresize {resize: none;}
     height: 13px; border-radius: 50%; border: 1px solid #aaa;}
 .custom_checkbox .checkbox_circle:hover+label:before {background: #aaa;}
 .custom_checkbox .checkbox_circle:focus+label:before {box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);}
-.custom_checkbox .checkbox_circle:checked+label:before {content: "\f00c"; font-family: FontAwesome; font-size: 12px; -webkit-font-smoothing: antialiased; text-align: center; line-height: 18px; color: #444;}
+.custom_checkbox .checkbox_circle:checked+label:before {content: "\f00c"; font-family: FontAwesome; font-size: calc(12rem/16); -webkit-font-smoothing: antialiased; text-align: center; line-height: 18px; color: #444;}
 .custom_checkbox .checkbox_circle:disabled+label {color: #b8b8b8; cursor: auto;}
 .custom_checkbox .checkbox_circle:disabled+label:before {background: #ddd;}
 
