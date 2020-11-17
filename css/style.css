@@ -401,6 +401,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ckeditor [style*="標楷體"] {
   font-family: 標楷體 !important;
 }
+.ckeditor [style*="細明體"] {
+  font-family: 細明體 !important;
+}
 
 .ckeditor.table {
   display: block !important;
