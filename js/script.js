@@ -174,8 +174,8 @@ function tableWidth(el) {
   }
 }
 window.onload = function () {
-  if (oneExist('.editor table')) {
-    tableWidth('.editor table')
+  if (oneExist('.ckeditor table')) {
+    tableWidth('.ckeditor table')
   }
   if (allExist('.list_tabs .uk-open') == true) {
     toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')

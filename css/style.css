@@ -436,7 +436,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   border: 1px solid black;
 }
 
-@media (max-width: 959px) {
+/* @media (max-width: 959px) {
 
   .ckeditor.tableblock table,
   .ckeditor.tableblock table caption,
@@ -468,7 +468,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .ckeditor.tablescroll table:last-of-type {
     margin-bottom: 0;
   }
-}
+} */
 
 /*--- Stack table ---*/
 @media (max-width: 959px) {
@@ -526,7 +526,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   }
 }
 
-@media (max-width: 1119px) {
+/* @media (max-width: 1119px) {
   .ckeditor.tablescroll #content {
     overflow                  : auto;
     -webkit-overflow-scrolling: touch;
@@ -546,7 +546,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .ckeditor table:not(.scroll_table):not(.uk-table) span.heading {
     display: none;
   }
-}
+} */
 /*--- End stack table ---*/
 
 .ckeditor ul:not(.list_arrow):not([uk-switcher]):not(.uk-switcher) {
