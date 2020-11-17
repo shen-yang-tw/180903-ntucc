@@ -333,6 +333,17 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 }
 
 /* Width & Height & Scroll */
+.min_width-1\/3\! {
+    width: calc(100%/3);
+}
+@media (min-width: 640px) {
+    .min_width-1\/3\!\@s {
+        width: calc(100%/3);
+    }
+    .min_width-1\/4\!\@s {
+        width: calc(100%/4);
+    }
+}
 .container_responsive, .container_responsive\@s, .container_responsive\@m {
 padding: 0;
 }
