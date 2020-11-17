@@ -1,394 +1,670 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW" xml:lang="zh-Hant">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="format-detection" content="telephone=no">
-  <!-- Fix phone number style for MS Edge -->
-  <meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
-  <title>國立臺灣大學醫學院附設癌醫中心醫院-NTUCC</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/uikit.min.css">
-  <link rel="stylesheet" href="css/fontawesome-5.14.0-all.min.css">
-  <link rel="stylesheet" href="css/fontawesome-5.14.0-svg-with-js.min.css">
-  <link rel="stylesheet" href="css/animate-3.6.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/delay&duration.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-3.3.1.min.js "></script>
-  <script src="js/bootstrap.bundle.min.js "></script>
-  <script src="js/uikit.min.js "></script>
-  <script src="js/uikit-icons.min.js "></script>
-  <script src="js/fontawesome-5.14.0-all.min.js "></script>
-  <script src="js/script.js "></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- Fix phone number style for MS Edge -->
+    <meta name="Designer&Developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front-end Developer | 前端設計工程師">
+    <title>國立臺灣大學醫學院附設癌醫中心醫院-NTUCC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <link rel="stylesheet" href="css/fontawesome-5.14.0-all.min.css">
+    <link rel="stylesheet" href="css/fontawesome-5.14.0-svg-with-js.min.css">
+    <link rel="stylesheet" href="css/animate-3.6.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/delay&duration.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js "></script>
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/uikit.min.js "></script>
+    <script src="js/uikit-icons.min.js "></script>
+    <script src="js/fontawesome-5.14.0-all.min.js "></script>
+    <script src="js/script.js " defer></script>
+  </head>
 
-<body id="top" class="uk-background-cover uk-background-top-center" uk-height-viewport>
-  <a class="bg_blackOpacity5 p-2 text-white rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" aria-label="Go to Top" uk-totop uk-scroll></a>
-  <div class="uk-offcanvas-content">
-    <header class="shadow-sm">
-      <hr class="border_primary border8 m-0">
-      <div class="shadow-sm" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
-        <nav class="uk-navbar-container uk-position-relative">
-          <div class="bg_primary uk-position-cover"></div>
-          <div class="bg-white position-relative">
-            <div class="px-2 px-md-4 uk-container" uk-navbar>
-              <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
-              <div class="uk-navbar-left">
-                <h1 class="py-2"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
-              </div>
-              <div class="uk-visible@m uk-navbar-right">
-                <div class="h-100 uk-flex uk-flex-middle" uk-margin>
-                  <span><a class="px-2" href="#">門診時間</a></span>
-                  <span><a class="px-2" href="#">站內檢索</a></span>
-                  <span><a class="px-2" href="#">人才招募</a></span>
-                  <span>｜</span>
-                  <span class="bgBlack"><a class="px-2" href="#">English</a></span>
-                  <span class="btnFontSize btnFontSizeS bgBlack"><button class="px-2 uk-button" title="縮小字級">A-</button></span>
-                  <span class="btnFontSize btnFontSizeM bgBlack active"><button class="px-2 uk-button" title="適中字級">A</button></span>
-                  <span class="btnFontSize btnFontSizeL bgBlack"><button class="px-2 uk-button" title="加大字級">A+</button></span>
+  <body id="top" class="uk-background-cover uk-background-top-center" uk-height-viewport>
+    <a class="bg_blackOpacity5 p-2 text-white rounded uk-text-center uk-position-fixed uk-position-small uk-position-bottom-right uk-position-z-index" href="#top" title="回到最上" aria-label="Go to Top" uk-totop uk-scroll></a>
+    <div class="uk-offcanvas-content">
+      <header class="shadow-sm">
+        <hr class="border_primary border8 m-0">
+        <div class="shadow-sm" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
+          <nav class="uk-navbar-container uk-position-relative">
+            <div class="bg_primary uk-position-cover"></div>
+            <div class="bg-white position-relative">
+              <div class="px-2 px-md-4 uk-container" uk-navbar>
+                <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
+                <div class="uk-navbar-left">
+                  <h1 class="py-2"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+                </div>
+                <div class="uk-visible@m uk-navbar-right">
+                  <div class="h-100 uk-flex uk-flex-middle" uk-margin>
+                    <span><a class="px-2" href="#">門診時間</a></span>
+                    <span><a class="px-2" href="#">站內檢索</a></span>
+                    <span><a class="px-2" href="#">人才招募</a></span>
+                    <span>｜</span>
+                    <span class="bgBlack"><a class="px-2" href="#">English</a></span>
+                    <span class="btnFontSize btnFontSizeS bgBlack"><button class="px-2 uk-button" title="縮小字級">A-</button></span>
+                    <span class="btnFontSize btnFontSizeM bgBlack active"><button class="px-2 uk-button" title="適中字級">A</button></span>
+                    <span class="btnFontSize btnFontSizeL bgBlack"><button class="px-2 uk-button" title="加大字級">A+</button></span>
+                  </div>
+                </div>
+                <div class="uk-hidden@m uk-navbar-right">
+                  <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
                 </div>
               </div>
-              <div class="uk-hidden@m uk-navbar-right">
-                <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
+            </div>
+            <div class="d-flex uk-visible@m uk-container" uk-navbar>
+              <div class="uk-navbar-center">
+                <ul class="borderB0 border_white uk-tab">
+                  <li hidden></li>
+                  <li>
+                    <a class="fontSizeH5 border4 text-white" href="#">關於癌醫</a>
+                    <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li><a class="hover_linkline fontSize1 text-dark" href="#">Itim</a></li>
+                        <li><a class="hover_linkline fontSize1 text-dark" href="#">Itim</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="fontSizeH5 border4 text-white" href="#">訊息專區</a>
+                    <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="mt-0 uk-nav-header">
+                          <span class="fontSize1 text-dark">Itim</span>
+                          <ul class="uk-nav-sub">
+                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                          </ul>
+                        </li>
+                        <li class="mt-0 uk-nav-header">
+                          <span class="fontSize1 text-dark">Itim</span>
+                          <ul class="uk-nav-sub">
+                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                            <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="fontSizeH5 border4 text-white" href="#">病人服務</a>
+                    <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li class="mt-0 uk-nav-header">
+                          <span class="fontSize1 text-dark">Itim</span>
+                          <ul class="uk-nav-sub">
+                            <li>
+                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
+                              <ul>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
+                              <ul>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="mt-0 uk-nav-header">
+                          <span class="fontSize1 text-dark">Itim</span>
+                          <ul class="uk-nav-sub">
+                            <li>
+                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
+                              <ul>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
+                              <ul>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                                <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a class="fontSizeH5 border4 text-white" href="#">醫療團隊</a></li>
+                  <li><a class="fontSizeH5 border4 text-white" href="#">教育研究</a></li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="d-flex uk-visible@m uk-container" uk-navbar>
-            <div class="uk-navbar-center">
-              <ul class="borderB0 border_white uk-tab">
-                <li hidden></li>
-                <li>
-                  <a class="fontSizeH5 border4 text-white" href="#">關於癌醫</a>
-                  <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
-                    <ul class="uk-nav uk-dropdown-nav">
-                      <li><a class="hover_linkline fontSize1 text-dark" href="#">Itim</a></li>
-                      <li><a class="hover_linkline fontSize1 text-dark" href="#">Itim</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a class="fontSizeH5 border4 text-white" href="#">訊息專區</a>
-                  <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
-                    <ul class="uk-nav uk-dropdown-nav">
-                      <li class="mt-0 uk-nav-header">
-                        <span class="fontSize1 text-dark">Itim</span>
-                        <ul class="uk-nav-sub">
-                          <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                          <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                      <li class="mt-0 uk-nav-header">
-                        <span class="fontSize1 text-dark">Itim</span>
-                        <ul class="uk-nav-sub">
-                          <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                          <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <a class="fontSizeH5 border4 text-white" href="#">病人服務</a>
-                  <div class="bg_whiteOpacity9 uk-overflow-auto uk-height-max-large" uk-dropdown="offset: 0">
-                    <ul class="uk-nav uk-dropdown-nav">
-                      <li class="mt-0 uk-nav-header">
-                        <span class="fontSize1 text-dark">Itim</span>
-                        <ul class="uk-nav-sub">
-                          <li>
-                            <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                            <ul>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                            <ul>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="mt-0 uk-nav-header">
-                        <span class="fontSize1 text-dark">Itim</span>
-                        <ul class="uk-nav-sub">
-                          <li>
-                            <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                            <ul>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a>
-                            <ul>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                              <li><a class="hover_linkline fontSize1 text-dark" href="#">Sub item</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li><a class="fontSizeH5 border4 text-white" href="#">醫療團隊</a></li>
-                <li><a class="fontSizeH5 border4 text-white" href="#">教育研究</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div id="offcanvas" uk-offcanvas>
-        <div class="bg_primary py-5 uk-offcanvas-bar">
-          <button class="uk-offcanvas-close" type="button" uk-close></button>
-          <ul class="uk-nav uk-nav-default uk-nav-parent-icon text-white" uk-nav>
-            <li class="uk-parent">
-              <a href="#">關於癌醫</a>
-              <ul class="uk-nav-sub">
-                <li class="d-inline-block"><a class="mx-2" href="#">Item</a></li>
-                <li class="d-inline-block"><a class="mx-2" href="#">Item</a></li>
-              </ul>
-            </li>
-            <li class="uk-parent">
-              <a href="#">訊息專區</a>
-              <ul class="uk-nav-sub">
-                <li class="mt-0 uk-nav-header">
-                  <span>Itim</span>
-                  <ul class="uk-nav-sub">
-                    <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                    <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                  </ul>
-                </li>
-                <li class="mt-0 uk-nav-header">
-                  <span>Itim</span>
-                  <ul class="uk-nav-sub">
-                    <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                    <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="uk-parent">
-              <a href="#">病人服務</a>
-              <ul class="uk-nav-sub">
-                <li class="mt-0 uk-nav-header">
-                  <span>Itim</span>
-                  <ul class="uk-nav-sub">
-                    <li>
-                      <a class="mx-2" href="#">Sub item</a>
-                      <ul>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="mx-2" href="#">Sub item</a>
-                      <ul>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                <li class="mt-0 uk-nav-header">
-                  <span>Itim</span>
-                  <ul class="uk-nav-sub">
-                    <li>
-                      <a class="mx-2" href="#">Sub item</a>
-                      <ul>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a class="mx-2" href="#">Sub item</a>
-                      <ul>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                        <li class="d-inline-block"><a class="mx-2" href="#">Sub item</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="uk-parent">
-              <a href="#">醫療團隊</a>
-              <ul class="uk-nav-sub">
-                <li class="d-inline-block"><a class="mx-2" href="#">Item</a></li>
-                <li class="d-inline-block"><a class="mx-2" href="#">Item</a></li>
-              </ul>
-            </li>
-            <li class="uk-parent">
-              <a href="#">教育研究</a>
-              <ul class="uk-nav-sub">
-                <li class="d-inline-block"><a class="mx-2" href="#">Item</a></li>
-                <li class="d-inline-block"><a class="mx-2" href="#">Item</a></li>
-              </ul>
-            </li>
-            <li class="uk-nav-divider"></li>
-            <li><a href="#">門診時間</a></li>
-            <li><a href="#">站內檢索</a></li>
-            <li><a href="#">人才招募</a></li>
-            <li><a href="#">English</a></li>
-          </ul>
+          </nav>
         </div>
-      </div>
-      <hr class="border-dark m-0">
-    </header>
-    <section class="position-relative uk-margin">
-      <div class="uk-container" uk-height-viewport="min-height: 300">
-        <ul class="uk-breadcrumb">
-          <li><a href="#">首頁</a></li>
-          <li><span>頁面標題</span></li>
-        </ul>
-        <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
-        <div class="mb-sm-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 300">
-          <div class="uk-grid-medium" uk-grid>
-            <div class="uk-width-1-3@m uk-width-1-4@l">
-              <div class="max_h200 max_h700M uk-overflow-auto">
-                <ul class="list-group uk-nav-parent-icon" uk-nav="multiple: true">
-                  <li class="p-0 list-group-item list-group-item-action active">
-                    <a class="p-2" href="#content">Level1-Active</a>
-                  </li>
-                  <li class="p-0 list-group-item list-group-item-action">
-                    <a class="p-2" href="#content">Level1</a>
-                  </li>
-                  <li class="p-0 list-group-item list-group-item-action uk-parent">
-                    <a class="p-2" href="#content">Level2</a>
-                    <ul>
-                      <li><a class="px-3 py-2" href="#content">Level2-Item</a></li>
-                      <li><a class="px-3 py-2" href="#content">Level2-Item</a></li>
+        <div id="offcanvas" uk-offcanvas>
+          <div class="bg_primary py-5 uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default text-white">
+              <li class="py-1 uk-parent">
+                <div class="flex">
+                  <a class="flex-1 flex items-center" href="#">關於癌醫</a>
+                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
+                </div>
+                <ul class="toggle hidden uk-nav-sub">
+                  <li><a class="mx-2" href="#">Item</a></li>
+                  <li><a class="mx-2" href="#">Item</a></li>
+                </ul>
+              </li>
+              <li class="py-1 uk-parent">
+                <div class="flex">
+                  <a class="flex-1 flex items-center" href="#">訊息專區</a>
+                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
+                </div>
+                <ul class="toggle hidden uk-nav-sub">
+                  <li class="mt-0 uk-nav-header">
+                    <span>Itim</span>
+                    <ul class="uk-nav-sub">
+                      <li><a class="mx-2" href="#">Sub item</a></li>
+                      <li><a class="mx-2" href="#">Sub item</a></li>
                     </ul>
                   </li>
-                  <li class="p-0 list-group-item list-group-item-action uk-parent">
-                    <a class="p-2" href="#">Level3</a>
-                    <ul>
+                  <li class="mt-0 uk-nav-header">
+                    <span>Itim</span>
+                    <ul class="uk-nav-sub">
+                      <li><a class="mx-2" href="#">Sub item</a></li>
+                      <li><a class="mx-2" href="#">Sub item</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="py-1 uk-parent">
+                <div class="flex">
+                  <a class="flex-1 flex items-center" href="#">病人服務</a>
+                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
+                </div>
+                <ul class="toggle hidden uk-nav-sub">
+                  <li class="mt-0 uk-nav-header">
+                    <span>Itim</span>
+                    <ul class="uk-nav-sub">
                       <li>
-                        <a class="px-3 py-2" href="#content">Title</a>
+                        <a class="mx-2" href="#">Sub item</a>
                         <ul>
-                          <li><a class="px-4 py-2" href="#content">Level3-Item</a></li>
-                          <li><a class="px-4 py-2" href="#content">Level3-Item</a></li>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="mx-2" href="#">Sub item</a>
+                        <ul>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="mt-0 uk-nav-header">
+                    <span>Itim</span>
+                    <ul class="uk-nav-sub">
+                      <li>
+                        <a class="mx-2" href="#">Sub item</a>
+                        <ul>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a class="mx-2" href="#">Sub item</a>
+                        <ul>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
+                          <li><a class="mx-2" href="#">Sub item</a></li>
                         </ul>
                       </li>
                     </ul>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="uk-width-expand@m">
-              <div class="mb-3 w-100 uk-inline">
-                <h2 class="btmline mb-1 text-justify">頁面標題</h2>
-              </div>
-              <form>
-                <div id="content">
+              </li>
+              <li class="py-1 uk-parent">
+                <div class="flex">
+                  <a class="flex-1 flex items-center" href="#">醫療團隊</a>
+                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
                 </div>
-              </form>
-            </div>
+                <ul class="toggle hidden uk-nav-sub">
+                  <li><a class="mx-2" href="#">Item</a></li>
+                  <li><a class="mx-2" href="#">Item</a></li>
+                </ul>
+              </li>
+              <li class="py-1 uk-parent">
+                <div class="flex">
+                  <a class="flex-1 flex items-center" href="#">教育研究</a>
+                  <a class="flex-1 flex items-center justify-end" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a>
+                </div>
+                <ul class="toggle hidden uk-nav-sub">
+                  <li><a class="mx-2" href="#">Item</a></li>
+                  <li><a class="mx-2" href="#">Item</a></li>
+                </ul>
+              </li>
+              <li class="uk-nav-divider"></li>
+              <li><a href="#">門診時間</a></li>
+              <li><a href="#">站內檢索</a></li>
+              <li><a href="#">人才招募</a></li>
+              <li><a href="#">English</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- main content -->
-    <div id="footer" class="bg_darkestGrey p-3 position-relative">
-      <div class="opacity20 uk-background-cover uk-background-top-center uk-position-cover" data-src="img/bg_footer.png" uk-img></div>
-      <div class="uk-container uk-container-large position-relative">
-        <div class="position-relative"><a class="remove_underline text-white px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>
-        <div class="my-1 uk-margin-bottom" id="sitemap" uk-margin hidden>
-          <div class="mb-3 uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l" uk-grid="masonry: true">
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1"><a class="text-white" href="#">Title (Link)</a></p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1">Title</p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1">Title</p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1">Title</p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1">Title</p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1">Title</p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-            <div class="uk-text-break">
-              <p class="border font-weight-bold mb-1 px-1">Title</p>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">Item</a>
-              <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
-              <a class="text-white" href="#">Item</a>
-            </div>
-          </div>
-          <hr class="border-light">
-        </div>
-        <footer class="uk-grid-small uk-grid-divider uk-child-width-expand" uk-grid>
-          <div class="uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl">
-            <img class="uk-width-1-3@s uk-width-1-1@m uk-width-4-5@xl" data-src="img/logo_white.svg" alt="logo" uk-img>
-            <div class="uk-margin" uk-margin>
-              <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</span>
-              <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-phone fa-fw"></i><strong>+ 886 2 2322-0322</strong></span>
-              <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-envelope fa-fw"></i><a class="linkline" href="mailto:ntuccac@ntu.edu.tw">ntuccac@ntu.edu.tw</a></span>
-            </div>
-          </div>
-          <div uk-margin>
-            <div uk-margin>
-              <a class="linkline" href="http://www.ntu.edu.tw/">臺灣大學</a>｜<a class="linkline" href="https://www.mc.ntu.edu.tw/ntucm/">臺灣大學醫學院</a>｜<a class="linkline" href="https://www.ntuh.gov.tw/">臺灣大學醫學院附設醫院</a>
-              <div class="mb-2 float-md-right">
-                <div class="uk-flex uk-flex-middle"><a class="remove_underline bg-dark px-2 py-1 text-white" href="#" uk-toggle="target: #sitemap">網站地圖</a><a class="opacity75 hover:opacity-100" href="#" title="無障礙AA標章" target="_blank"><img src="img/accessibilityAA.jpg" alt="無障礙AA標章" style="max-height:36px;"></a></div>
+        <hr class="border-dark m-0">
+      </header>
+      <section class="position-relative uk-margin">
+        <div class="uk-container" uk-height-viewport="min-height: 300">
+          <ul class="uk-breadcrumb">
+            <li><a href="#">首頁</a></li>
+            <li><span>頁面標題</span></li>
+          </ul>
+          <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
+          <div class="mb-sm-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 300">
+            <div class="uk-grid-medium" uk-grid>
+              <div class="uk-width-1-3@m uk-width-1-4@l">
+                <div class="max_h200 max_h700M uk-overflow-auto">
+                  <ul class="list_tabs uk-nav-default">
+                    <li class="p-0 uk-nav-header">
+                      <a class="remove_underline w-100 break-all px-2" href="#content">Level1</a>
+                    </li>
+                    <li class="p-0 uk-nav-header uk-parent">
+                      <div class="p-0 uk-grid uk-grid-collapse" uk-grid>
+                        <div class="uk-width-expand"><a class="remove_underline w-100 break-all px-2" href="#">Level2</a></div>
+                        <div class="uk-width-auto"><a class="remove_underline w-100 break-all px-2 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a></div>
+                      </div>
+                      <ul class="toggle hidden uk-nav-sub p-0 bg-white">
+                        <li class="p-0"><a class="remove_underline w-100 break-all pl-4 px-2" href="#">Item</a></li>
+                        <li class="p-0"><a class="remove_underline w-100 break-all pl-4 px-2" href="#">Item</a></li>
+                      </ul>
+                    </li>
+                    <li class="p-0 uk-nav-header uk-parent uk-open">
+                      <div class="p-0 uk-grid uk-grid-collapse active" uk-grid>
+                        <div class="uk-width-expand"><a class="remove_underline w-100 break-all px-2" href="#">Level3</a></div>
+                        <div class="uk-width-auto"><a class="remove_underline w-100 break-all px-2 h-full" href="#" title="展開/收合選單" onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.toggle'), 'hidden'); return false;"><span class="toggle" uk-icon="icon: chevron-right"></span><span class="toggle hidden" uk-icon="icon: chevron-down"></span class="toggle"></a></div>
+                      </div>
+                      <ul class="toggle hidden uk-nav-sub p-0 bg-white">
+                        <li class="p-0">
+                          <a class="remove_underline w-100 break-all pl-4 px-2" href="#content">Title</a>
+                          <ul class="uk-nav-sub p-0">
+                            <li class="p-0 active"><a class="remove_underline w-100 break-all pl-6 px-2" href="#">Item</a></li>
+                            <li class="p-0"><a class="remove_underline w-100 break-all pl-6 px-2" href="#">Item</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div uk-margin>
-              <div uk-margin><span><i class="mr-1 fas fa-eye fa-fw"></i>當日瀏覽 <span class="bg-dark px-2 mr-3">2,806</span></span><span><i class="mr-1 fas fa-users fa-fw"></i>在線人數 <span class="bg-dark px-2 mr-3">49</span></span><span><i class="mr-1 fas fa-chart-bar fa-fw"></i>瀏覽總計 <span class="bg-dark px-2 mr-3">6,215,595</span></span></div>
-              <div uk-grid uk-margin>
-                <div>版權所有 © <span class="year"></span> 國立臺灣大學醫學院附設癌醫中心醫院</div>
-                <div><a class="linkline" href="#">隱私權保護及資訊安全政策</a></div>
-                <div>建議使用 IE11 以上或 Edge、Firefox、Chrome 瀏覽器</div>
-                <div>最佳瀏覽螢幕解析度 1920x1080</div>
-                <div>最後更新日期<span class="ml-1">107-09-20</span></div>
-              </div>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-    <!-- footer -->
-  </div>
-  <!-- offcanvas-content -->
+              <div class="uk-width-expand@m">
+                <div class="mb-3 w-100 uk-inline">
+                  <h2 class="btmline mb-1 text-justify">頁面標題</h2>
+                </div>
+                <form>
+                  <div class="ckeditor" id="content">
+                    <ul>
+                      <li>
+                        L1
+                        <ul>
+                          <li>L2</li>
+                          <li>
+                            L2
+                            <ul>
+                              <li>L3</li>
+                              <li>L3</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>L1</li>
+                    </ul>
 
-</body>
+                    <ol>
+                      <li>
+                        L1
+                        <ol>
+                          <li>L2</li>
+                          <li>
+                            L2
+                            <ol>
+                              <li>L3</li>
+                              <li>L3</li>
+                            </ol>
+                          </li>
+                        </ol>
+                      </li>
+                      <li>L1</li>
+                    </ol>
+
+                    <ul>
+                      <li>
+                        L1
+                        <ol>
+                          <li>L2</li>
+                          <li>L2</li>
+                        </ol>
+                      </li>
+                      <li>L1</li>
+                    </ul>
+
+                    <ol>
+                      <li>
+                        L1
+                        <ul>
+                          <li>L2</li>
+                          <li>L2</li>
+                        </ul>
+                      </li>
+                      <li>L1</li>
+                    </ol>
+
+                    <div class="uk-card uk-card-body" style="background-color: #e2e8f0;">
+                      <h3>Primary</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+
+                    <h3>標題文字-h3</h3>
+                    <p class="h3">標題文字-h3</p>
+                    <h4>標題文字-h4</h4>
+                    <p class="h4">標題文字-h4</p>
+                    <h5>標題文字-h5</h5>
+                    <p class="h5">標題文字-h5</p>
+                    <h6>標題文字-h6</h6>
+                    <p class="h6">標題文字-h6</p>
+                    <p><a href="#">http://sample.com.tw</a>，書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不！
+                    </p>
+
+                    <div><i class="color_primary fas fa-arrow-circle-right mr-1"></i><a href="#">連結圖示</a></div>
+                    <div><i class="color_primary fas fa-cloud-download-alt mr-1"></i><a href="#">檔案下載圖式</a></div>
+
+                    <div class="grid-container">
+                      <div class="uk-child-width-expand@m uk-grid-small" uk-margin uk-grid>
+                        <div>
+                          <div class="h-100 uk-card uk-card-body" style="background-color: #f7fafc;">
+                            <p class="text-body px-2 mb-2" style="background-color: #cbd5e0;"><strong class="font-semibold text-black">掛號服務</strong></p>
+                            <ul>
+                              <li>網路掛號</li>
+                              <li>電話掛號</li>
+                              <li>現場掛號</li>
+                              <li>轉診掛號</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="h-100 uk-card uk-card-body" style="background-color: #f7fafc;">
+                            <p class="text-body px-2 mb-2" style="background-color: #cbd5e0;"><strong class="font-semibold text-black">門診看診</strong class="font-semibold"></p>
+                            <ul>
+                              <li>門診時間表查詢</li>
+                              <li>看診進度查詢</li>
+                              <li>領藥進度查詢</li>
+                              <li>門診就醫須知</li>
+                              <li>門診檢查說明書</li>
+                              <li>連續處方箋預約領藥</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="h-100 uk-card uk-card-body" style="background-color: #f7fafc;">
+                            <div class="h-100 uk-flex uk-flex-middle uk-flex-center">
+                              <a href="https://www.ntuh.gov.tw/ntuh/Fpage.action?muid=70&amp;fid=2972">該看哪一科?</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="switcher">
+                      <!-- This is the nav containing the toggling elements -->
+                      <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                        <li><a href="#">Tab1</a></li>
+                        <li><a href="#">Tab2</a></li>
+                      </ul>
+                      <!-- This is the container of the content items -->
+                      <ul class="uk-switcher">
+                        <li>Content1</li>
+                        <li>Content2</li>
+                      </ul>
+                    </div>
+
+                    <div class="block">
+                      <div class="px-1 py-2 text-body" style="background: #5b9bd5;">路線一：書孩個體苦做，行習高人可看舉在什但優是馬此有組</div>
+                      <div class="px-1 py-2">書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</div>
+                      <div class="px-1 py-2 text-body" style="background: #70ad47;">路線二：書孩個體苦做，行習高人可看舉在什但優是馬此有組</div>
+                      <div class="px-1 py-2">書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</div>
+                      <div class="px-1 py-2 text-body" style="background: #ed7d31;">路線三：書孩個體苦做，行習高人可看舉在什但優是馬此有組</div>
+                      <div class="px-1 py-2">書孩個體苦做，行習高人可看舉在什但優！是馬此有組，樹親生信意美大過產立！來靜我故半演們種熱光……或該更。開經功家可了，命化臺到陸產文老如然節，身初把，步信女背切不張財前日指統假？所文影清是，方此小了合國子易連體德利會之的參，馬方不了機圖都至展有別開場來裡了覺對活的，時做建了力國廠委果分一備女進小功創有？那給國靜球學動他藝轉明、化漸飯不</div>
+                    </div>
+
+                    <table class="table_center" border="1" cellpadding="0" cellspacing="0" width="784">
+                      <thead>
+                        <tr>
+                          <th>Hours</th>
+                          <th>Monday</th>
+                          <th>Tuesday</th>
+                          <th>Wednesday</th>
+                          <th>Thursday</th>
+                          <th>Friday</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Morning 9:00-12:00
+                          </td>
+                          <td>X</td>
+                          <td>X</td>
+                          <td>X</td>
+                          <td>X</td>
+                          <td>X</td>
+                        </tr>
+                        <tr>
+                          <td>Afternoon 1:30-4:30
+                          </td>
+                          <td>X</td>
+                          <td>X</td>
+                          <td>X</td>
+                          <td>X</td>
+                          <td>X</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table border="1" cellpadding="0" cellspacing="0" width="784">
+                      <thead>
+                        <tr>
+                          <th>Hours</th>
+                          <th>Monday</th>
+                          <th>Tuesday</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><span class="heading d-block mx-1 mr-1 uk-hidden@m">Heading1</span>Morning 9:00-12:00
+                          </td>
+                          <td><span class="heading d-block mx-1 mr-1 uk-hidden@m">Heading2</span>X</td>
+                          <td><span class="heading d-block mx-1 mr-1 uk-hidden@m">Heading3</span>X</td>
+                        </tr>
+                        <tr>
+                          <td><span class="heading d-block mx-1 mr-1 uk-hidden@m">Heading1</span>Afternoon 1:30-4:30
+                          </td>
+                          <td><span class="heading d-block mx-1 mr-1 uk-hidden@m">Heading2</span>X</td>
+                          <td><span class="heading d-block mx-1 mr-1 uk-hidden@m">Heading3</span>X</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table border="1" width="50%">
+                      <caption>Table-有外框無間距 width="50%，在手機版自動寬度100%"</caption>
+                      <thead>
+                        <tr>
+                          <th style="color: red; font-weight: bolder; font-family: '細明體';">欄位1</th>
+                          <th>欄位2</th>
+                          <th>欄位3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="color: blue; font-weight: bolder; font-family: '細明體'; font-size: 24px;">細明體</td>
+                          <td>預設黑體文字</td>
+                          <td>Table Footer</td>
+                        </tr>
+                        <tr>
+                          <td>Table Data</td>
+                          <td>Table Data</td>
+                          <td>Table Data</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table border="0" cellspacing="20">
+                      <caption>Table-無外框有間距20</caption>
+                      <thead>
+                        <tr>
+                          <th>Table Heading</th>
+                          <th>Table Heading</th>
+                          <th>Table Heading</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Table Footer</td>
+                          <td>Table Footer</td>
+                          <td>Table Footer</td>
+                        </tr>
+                        <tr>
+                          <td>Table Data</td>
+                          <td>Table Data</td>
+                          <td>Table Data</td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <table border="1" cellspacing="10" style="width: 80%;">
+                      <caption>Table-有外框有間距10</caption>
+                      <thead>
+                        <tr>
+                          <th>Table Heading</th>
+                          <th>Table Heading</th>
+                          <th>Table Heading</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Table Footer</td>
+                          <td>Table Footer</td>
+                          <td>Table Footer</td>
+                        </tr>
+                        <tr>
+                          <td>Table Data</td>
+                          <td>Table Data</td>
+                          <td>Table Data</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- main content -->
+      <div id="footer" class="bg_darkestGrey p-3 position-relative">
+        <div class="opacity20 uk-background-cover uk-background-top-center uk-position-cover" data-src="img/bg_footer.png" uk-img></div>
+        <div class="uk-container uk-container-large position-relative">
+          <div class="position-relative"><a class="remove_underline text-white px-1 uk-position-absolute uk-visible@m" href="#Z" id="AZ" name="Z" title="下方功能區塊" accesskey="Z" style="left:-30px">:::</a></div>
+          <div class="my-1 uk-margin-bottom" id="sitemap" uk-margin hidden>
+            <div class="mb-3 uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l" uk-grid="masonry: true">
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1"><a class="text-white" href="#">Title (Link)</a></p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1">Title</p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1">Title</p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1">Title</p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1">Title</p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1">Title</p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+              <div class="uk-text-break">
+                <p class="border font-weight-bold mb-1 px-1">Title</p>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">Item</a>
+                <a class="text-white" href="#">得縣花期時媽要得親女公門</a>
+                <a class="text-white" href="#">Item</a>
+              </div>
+            </div>
+            <hr class="border-light">
+          </div>
+          <footer class="uk-grid-small uk-grid-divider uk-child-width-expand" uk-grid>
+            <div class="uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl">
+              <img class="uk-width-1-3@s uk-width-1-1@m uk-width-4-5@xl" data-src="img/logo_white.svg" alt="logo" uk-img>
+              <div class="uk-margin" uk-margin>
+                <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</span>
+                <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-phone fa-fw"></i><strong>+ 886 2 2322-0322</strong></span>
+                <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-envelope fa-fw"></i><a class="linkline" href="mailto:ntuccac@ntu.edu.tw">ntuccac@ntu.edu.tw</a></span>
+              </div>
+            </div>
+            <div uk-margin>
+              <div uk-margin>
+                <a class="linkline" href="http://www.ntu.edu.tw/">臺灣大學</a>｜<a class="linkline" href="https://www.mc.ntu.edu.tw/ntucm/">臺灣大學醫學院</a>｜<a class="linkline" href="https://www.ntuh.gov.tw/">臺灣大學醫學院附設醫院</a>
+                <div class="mb-2 float-md-right">
+                  <div class="uk-flex uk-flex-middle"><a class="remove_underline bg-dark px-2 py-1 text-white" href="#" uk-toggle="target: #sitemap">網站地圖</a><a class="opacity75 hover:opacity-100" href="#" title="無障礙AA標章" target="_blank"><img src="img/accessibilityAA.jpg" alt="無障礙AA標章" style="max-height:36px;"></a></div>
+                </div>
+              </div>
+              <div uk-margin>
+                <div uk-margin><span><i class="mr-1 fas fa-eye fa-fw"></i>當日瀏覽 <span class="bg-dark px-2 mr-3">2,806</span></span><span><i class="mr-1 fas fa-users fa-fw"></i>在線人數 <span class="bg-dark px-2 mr-3">49</span></span><span><i class="mr-1 fas fa-chart-bar fa-fw"></i>瀏覽總計 <span class="bg-dark px-2 mr-3">6,215,595</span></span></div>
+                <div uk-grid uk-margin>
+                  <div>版權所有 © <span class="year"></span> 國立臺灣大學醫學院附設癌醫中心醫院</div>
+                  <div><a class="linkline" href="#">隱私權保護及資訊安全政策</a></div>
+                  <div>建議使用 IE11 以上或 Edge、Firefox、Chrome 瀏覽器</div>
+                  <div>最佳瀏覽螢幕解析度 1920x1080</div>
+                  <div>最後更新日期<span class="ml-1">107-09-20</span></div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+      <!-- footer -->
+    </div>
+    <!-- offcanvas-content -->
+
+  </body>
 
 </html>

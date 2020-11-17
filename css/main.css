@@ -145,6 +145,9 @@ a:focus, button:focus, input:focus, select:focus, textarea:focus {
 @media (min-width:640px) {
     .s\:text-right {text-align: right;}
 }
+.break-all {
+    word-break: break-all!important;
+}
 
 /* Text Weight */
 .hover_bold {
@@ -233,6 +236,7 @@ input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:b
 /* Display & Visibility */
 a, span, label, strong, small {display: inline-block;}
 img[src=""] {display: none;}
+.hidden {display: none;}
 
 /* Border */
 /*.border {border: 1px solid !important;}*/
@@ -402,6 +406,18 @@ box-shadow: none;
 .min_width-200\! {
     min-width: 200px !important;
 }
+.min_width-600 {
+    min-width: 600px;
+}
+.min_width-600\! {
+    min-width: 600px !important;
+}
+.min_width-700 {
+    min-width: 700px;
+}
+.min_width-700\! {
+    min-width: 700px !important;
+}
 .min_width-1000 {
     min-width: 1000px;
 }
@@ -428,6 +444,12 @@ box-shadow: none;
     .min_width-200\!\@s {
         min-width: 200px !important;
     }
+    .min_width-900\@s {
+        min-width: 900px;
+    }
+    .min_width-900\!\@s {
+        min-width: 900px !important;
+    }    
     .min_width-1000\@s {
         min-width: 1000px;
     }
@@ -641,6 +663,64 @@ textarea.noresize {resize: none;}
 .uk-tab a:hover {text-decoration:none;}
 [class*=uk-] * {text-transform: inherit !important;}
 
+[class*=list_tabs] {
+display: -ms-flexbox;
+display: flex;
+-ms-flex-direction: column;
+flex-direction: column;
+padding-left: 0;
+margin-bottom: 0;
+}
+[class*=list_tabs] > li {
+position: relative;
+display: block;
+width: 100%;
+color: #616161;
+text-align: inherit;
+margin-bottom: -1px;
+background-color: white;
+border: 1px solid rgba(0, 0, 0, 0.12);
+}
+[class*=list_tabs] > li:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+[class*=list_tabs] > li:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+[class*=list_tabs] > li a {
+    color: #616161;
+}
+[class*=list_tabs] > li > *:not(ul), [class*=list_tabs] > li a {
+    padding: 10px;
+}
+[class*=list_tabs] > li li a {
+    padding: 10px 20px;
+}
+[class*=list_tabs] > li li li a {
+    padding: 10px 30px;
+}
+[class*=list_tabs] > li.active > a, [class*=list_tabs] > li a:hover, [class*=list_tabs] > li.uk-parent.uk-open > a {
+    color: #737373;
+    background-color: #fafafa;
+}
+[class*=list_tabs] > li.active, [class*=list_tabs] > li .active > a, [class*=list_tabs] > li.uk-parent.uk-open > a {
+    font-weight: 300;
+}
+[class*=list_tabs] > li.uk-nav-header {
+    font-size: 1rem;
+    margin-top: 0;
+    padding: 0;
+}
+[class*=list_tabs] > li.uk-nav-header > *:not(ul) {
+    font-weight: 500 !important;
+}
+[class*=list_tabs] > li > a::after, [class*=list_tabs] > li > a:hover::after {
+    border-bottom: none;
+}
+  
 .list_tab-button::before {
     border-bottom: 1px solid #f8f8f8;
 }
@@ -712,7 +792,15 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
     display: block;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
 }
-
+.uk-navbar-toggle {
+    min-width: 60px;
+}
+.uk-nav-divider {
+    height: 1px;
+}
+.uk-offcanvas a * {
+    color: white;
+}
 /* End Uikit 3 Style
 ---------------------------------------------------- */
 
@@ -724,6 +812,18 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Style */
 
+.flex-1 {
+    flex: 1 1 0%!important;
+}
+.justify-end {
+    justify-content: flex-end!important;
+}
+.items-center {
+    align-items: center!important;
+}
+.flex {
+    display: flex!important;
+}
 
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
