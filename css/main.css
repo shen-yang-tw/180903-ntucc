@@ -704,14 +704,14 @@ border: 1px solid rgba(0, 0, 0, 0.12);
 [class*=list_tabs] > li a {
     color: #616161;
 }
-[class*=list_tabs] > li > *:not(ul), [class*=list_tabs] > li a {
-    padding: 10px;
+[class*=list_tabs] > li a {
+    padding: 10px !important;
 }
 [class*=list_tabs] > li li a {
-    padding: 10px 20px;
+    padding: 10px 20px !important;
 }
 [class*=list_tabs] > li li li a {
-    padding: 10px 30px;
+    padding: 10px 30px !important;
 }
 [class*=list_tabs] > li.active > a, [class*=list_tabs] > li a:hover, [class*=list_tabs] > li.uk-parent.uk-open > a {
     color: #737373;
