@@ -344,6 +344,8 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
         width: calc(100%/4);
     }
 }
+.h-full {height: 100%;}
+
 .container_responsive, .container_responsive\@s, .container_responsive\@m {
 padding: 0;
 }
