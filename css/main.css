@@ -733,7 +733,14 @@ border: 1px solid rgba(0, 0, 0, 0.12);
 [class*=list_tabs] > li > a::after, [class*=list_tabs] > li > a:hover::after {
     border-bottom: none;
 }
-  
+[class*=list_tabs] .uk-width-auto>a {
+    min-width: 45px;
+    text-align: center;
+}
+[class*=list_tabs] .uk-width-auto>a .uk-icon {
+    margin: 0;
+}
+
 .list_tab-button::before {
     border-bottom: 1px solid #f8f8f8;
 }
