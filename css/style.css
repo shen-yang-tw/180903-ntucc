@@ -717,9 +717,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   display: inline-block;
 }
 
+.ckeditor .uk-subnav>*:first-child {
+  padding-left: 0;
+}
+
 .ckeditor .uk-subnav-pill {
   border-bottom: 1px solid #f8f8f8;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 .ckeditor .uk-subnav-pill a {
