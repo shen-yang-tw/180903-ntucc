@@ -573,7 +573,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ckeditor h4,
 .ckeditor h5,
 .ckeditor h6,
-.ckeditor a,
+.ckeditor a:not([class*=btn_]):not([class*=uk-button]),
 .ckeditor .h3,
 .ckeditor .h4,
 .ckeditor .h5,
@@ -689,7 +689,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .ckeditor img,
-.ckeditor a,
+.ckeditor a:not([class*=btn_]):not([class*=uk-button]),
 .ckeditor span,
 .ckeditor label,
 .ckeditor strong,
