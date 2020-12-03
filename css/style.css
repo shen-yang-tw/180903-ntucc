@@ -491,14 +491,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin: 20px 0;
   }
 
-  .ckeditor table:not(.scroll_table):not(.uk-table) *:not([class*=fa]) {
+  /* .ckeditor table:not(.scroll_table):not(.uk-table) *:not([class*=fa]):not(img) {
     width      : auto !important;
     height     : auto !important;
     max-width  : none !important;
     min-width  : 0 !important;
     overflow   : visible !important;
     white-space: normal !important;
-  }
+  } */
 
   .ckeditor table[border]:not([border="0"]):not(.uk-table) td {
     border       : none;
