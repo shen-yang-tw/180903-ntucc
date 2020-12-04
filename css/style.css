@@ -23,13 +23,13 @@ a.color_primary:hover *,
 .hover_color_secondary:hover,
 ul.hover_color_secondary>li>a:focus,
 ul.hover_color_secondary>li>a:hover {
-  color: #016a77 !important;
+  color: #06805b !important;
 }
 
 a.color_secondary:hover,
 a.color_secondary:hover *,
 .color_secondary a:hover {
-  color: #005b68 !important;
+  color: #06805b !important;
 }
 
 .color_darkestGrey,
@@ -46,7 +46,7 @@ a.color_secondary:hover *,
 
 .bg_hover_white_color_secondary:focus,
 .bg_hover_white_color_secondary:hover {
-  color           : #016a77 !important;
+  color           : #068660 !important;
   background-color: white;
 }
 
@@ -75,7 +75,7 @@ ul.hover_bg_secondary>li>a:focus,
 ul.hover_bg_secondary>li>a:hover,
 ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
   color           : white;
-  background-color: #016a77 !important;
+  background-color: #068660 !important;
 }
 
 .bg_khaki {
@@ -98,7 +98,7 @@ ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
 
 .btn_secondary:focus,
 .btn_secondary:hover {
-  background-color: #005b68 !important;
+  background-color: #06805b !important;
 }
 
 /* Border */
@@ -117,7 +117,7 @@ ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
 .border_secondary li a:hover,
 .border_hover_secondary:focus,
 .border_hover_secondary:hover {
-  border-color: #016a77 !important;
+  border-color: #068660 !important;
 }
 
 /* End Pre Style
@@ -755,6 +755,69 @@ caption {
   color: white !important;
 }
 
+/* ----------- IE10+ ----------- */
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .height_fixIE {
+    height: 100%;
+  }
+
+  .uk-dropdown-nav li>* {
+    display: block !important;
+  }
+
+}
+
+.bg_gradient {
+  background: linear-gradient(to right, #068660 0%, #2d747c 100%);
+}
+.bg_gradient * {
+  color: white;
+}
+/* .subsite .list, .subsite .list .uk-card {
+  position: relative;
+}
+.subsite * {
+  z-index: 0;
+}
+.subsite .list .uk-dropdown {
+  z-index: 1;
+} */
+
+/* Sub site
+---------------------------------------------------- */
+
+/* .subsite header {
+  position: relative;
+} */
+.subsite header nav::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background     : url(../img/bg_header.jpg) no-repeat center center;
+  background-size: cover;
+  opacity: .5;
+}
+@media (min-width: 640px) {
+  .subsite .doctor .thisRatio1_1 {
+    max-width: 300px;
+  }
+}
+/* .subsite header nav>:first-child {
+  background-color: rgba(255, 255, 255, 0) !important;
+} */
+.subsite .question {
+  overflow-y: auto;
+}
+/* .subsite .doctor.overflow_hidden {
+  overflow: inherit;
+  padding-bottom: 0;
+}
+.subsite .doctor.overflow_hidden:after {
+  display: none;
+} */
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
 
@@ -785,19 +848,6 @@ caption {
 
 /* Landscape */
 @media screen and (max-device-width: 959px) and (orientation:landscape) {}
-
-/* ----------- IE10+ ----------- */
-@media all and (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-  .height_fixIE {
-    height: 100%;
-  }
-
-  .uk-dropdown-nav li>* {
-    display: block !important;
-  }
-
-}
 
 /* ----------- iPhone 4 and 4S ----------- */
 
