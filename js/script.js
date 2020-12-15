@@ -38,6 +38,11 @@ function slideShowFocus(slideshow, tabsArray, thisFocus) {
     }
   }
 }
+function enterOpenUrl(targetWindow, thisKeyDown, event) {
+  if (event.keyCode === 13) {
+    window.open(thisKeyDown.getAttribute('href'), targetWindow)
+  }
+}
 
 function toggleCheckAll(thisClick, inputClass) {
   //thisClick means the "owner" and CANNOT use "this" that means the Global object "Window"
@@ -113,12 +118,6 @@ function findAll(sl) {
 function findChild(parentEL, sl) {
   return parentEL.querySelector(sl)
   // return parentEL.querySelector(sl).tagName;
-}
-
-function enterOpenUrl(targetWindow, thisKeyDown, event) {
-  if (event.keyCode === 13) {
-    window.open(thisKeyDown.getAttribute('href'), targetWindow)
-  }
 }
 
 //Table width in editor
