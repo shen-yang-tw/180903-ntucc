@@ -204,10 +204,6 @@ $(window).on("scroll", function () {
   }
 })
 
-$(window).on("load", function () {
-
-})
-
 $(window).on("resize load", function () {
 
   //Get current year
