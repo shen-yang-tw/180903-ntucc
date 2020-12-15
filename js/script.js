@@ -77,7 +77,7 @@ function toggleAllShow(allChildren) {
 //toggle all class by array - onclick="toggleAllClass(findChildren(findParent(this, 'LI'), '.detail'), 'hidden'); return false;"
 //return false - avoid the page jumping straight to the top"
 function toggleAllClass(allChildren, cls1, cls2) {
-  for (var i = 0; i < allChildren.length; i++) {
+  for (var i = 0;i < allChildren.length;i++) {
     allChildren[i].classList.toggle(cls1)
     if (cls2 != null) {
       allChildren[i].classList.toggle(cls2)
@@ -87,7 +87,7 @@ function toggleAllClass(allChildren, cls1, cls2) {
 }
 //toggle two classes - onmouseover="removeAddClasses(findChildren(findParent(this, 'LI'), 'p'), 'uk-text-truncate', 'flex-wrap')" onmouseout="removeAddClasses(findChildren(findParent(this, 'LI'), 'p'), 'flex-wrap', 'uk-text-truncate')"
 function removeAddClasses(allChildren, classRemove, classAdd) {
-  for (var i = 0; i < allChildren.length; i++) {
+  for (var i = 0;i < allChildren.length;i++) {
     allChildren[i].classList.remove(classRemove)
     allChildren[i].classList.add(classAdd)
   }
@@ -173,15 +173,25 @@ function tableWidth(el) {
     }
   }
 }
-window.onload = function () {
-  if (oneExist('.ckeditor table')) {
-    tableWidth('.ckeditor table')
-  }
-  if (allExist('.list_tabs .uk-open') == true) {
-    toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')
+//Set the "alt" attribute to all icons
+function iconAlt(el) {
+  var el = document.querySelectorAll(el)
+  for (var i = 0;i < el.length;i++) {
+    el[i].setAttribute("alt", "")
+    // console.log(el.length)
   }
 }
-
+// iconAlt('[class*=fa-]')
+if (oneExist('.ckeditor table')) {
+  tableWidth('.ckeditor table')
+}
+if (allExist('.list_tabs .uk-open')) {
+  toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')
+}
+if (oneExist('[class*=fa-]')) {
+  iconAlt('[class*=fa-]')
+  // console.log(oneExist('[class*=fa-]'))
+}
 
 //Gototop fadeIn & fadeOut on scrollTop / scroll
 $("[uk-totop]").hide()
