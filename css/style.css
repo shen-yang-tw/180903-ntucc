@@ -755,13 +755,13 @@ caption {
   color: white !important;
 }
 
-.btmline.text-justify {
+h2.btmline.text-justify {
   text-align: left !important;
   font-size: 1.2rem !important;
 }
 
 @media (min-width: 960px) {
-  .btmline.text-justify {
+  h2.btmline.text-justify {
     font-size: 1.6875rem !important;
   }
 }
