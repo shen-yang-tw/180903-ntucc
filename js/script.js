@@ -173,6 +173,10 @@ function tableWidth(el) {
     }
   }
 }
+if (oneExist('.ckeditor table')) {
+  tableWidth('.ckeditor table')
+}
+
 //Set the "alt" attribute to all icons
 function iconAlt(el) {
   var el = document.querySelectorAll(el)
@@ -181,16 +185,13 @@ function iconAlt(el) {
     // console.log(el.length)
   }
 }
-// iconAlt('[class*=fa-]')
-if (oneExist('.ckeditor table')) {
-  tableWidth('.ckeditor table')
-}
-if (allExist('.list_tabs .uk-open')) {
-  toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')
-}
 if (oneExist('[class*=fa-]')) {
   iconAlt('[class*=fa-]')
   // console.log(oneExist('[class*=fa-]'))
+}
+
+if (allExist('.list_tabs .uk-open')) {
+  toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')
 }
 
 //Gototop fadeIn & fadeOut on scrollTop / scroll
