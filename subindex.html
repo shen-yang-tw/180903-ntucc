@@ -31,18 +31,6 @@
       <hr class="border_primary border8 m-0 uk-hidden@m">
       <div class="shadow-sm" uk-sticky="media: (max-width: 959px); animation: uk-animation-slide-top; top: 200">
         <nav class="bg_secondary uk-navbar-container">
-          <!-- <div class="bg_secondary uk-position-cover"></div> -->
-          <!-- <div class="p-1 text-body small position-relative uk-flex-center uk-flex uk-flex-middle uk-visible@m" uk-margin>
-            <a class="remove_underline px-1 uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U">:::</a>
-            <span><a class="px-2" href="#">回台大癌醫中心首頁</a></span>
-            <span><a class="px-2" href="#">站內檢索</a></span>
-            <span><a class="px-2" href="#">網站導覽</a></span>
-            <span>｜</span>
-            <span class="bgBlack"><a class="px-2" href="#">English</a></span>
-            <span class="btnFontSize btnFontSizeS bgBlack"><button class="px-2 uk-button" title="縮小字級">A-</button></span>
-            <span class="btnFontSize btnFontSizeM bgBlack active"><button class="px-2 uk-button" title="適中字級">A</button></span>
-            <span class="btnFontSize btnFontSizeL bgBlack"><button class="px-2 uk-button" title="加大字級">A+</button></span>
-          </div> -->
           <div class="bg-white">
             <div class="color_black p-1 small position-relative uk-flex-center uk-flex uk-flex-middle uk-visible@m" uk-margin>
               <a class="remove_underline px-1 uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U">:::</a>
@@ -57,10 +45,19 @@
             </div>
             <div class="px-2 px-md-4 uk-container" uk-navbar>
               <div class="w-100 uk-navbar-left">
-                <h1 class="py-2 w-100 text-center"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+                <h1 class="py-1 py-lg-2 w-100 flex center" data-uk-margin>
+                  <div class="logo"><a class="w-100 flex center" href="index.html" title="回主網站首頁"><img src="img/blank.gif" alt="Logo"></a></div>
+                  <div class="vline"></div>
+                  <div class="logo_txt flex align-items-center">
+                    <a class="d-block" href="#">
+                      <div class="logo_cht font-weight-bold text-dark">急診醫學部</div>
+                      <div class="logo_eng font-weight-bold text-dark uk-visible@s">Emergency Medicine Department</div>
+                    </a>
+                  </div>
+                </h1>
               </div>
               <div class="uk-hidden@m uk-navbar-right">
-                <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
+                <button class="color_primary pl-0 pr-0 flex justify-content-end uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
               </div>
             </div>
           </div>
@@ -272,30 +269,30 @@
           <div class="min_width-2/3!@l">
             <div class="h-100 uk-card uk-card-default uk-card-hover">
               <!-- <div uk-slideshow="autoplay: true; min-height: 300; max-height:350"> -->
-              <div class="h-100" uk-slideshow="min-height: 300;">
+              <div id="slideshow" class="h-100" uk-slideshow="min-height: 300;">
                 <div class="h-100 uk-visible-toggle uk-light">
                   <ul class="h-100 uk-slideshow-items">
                     <li class="bg-black">
                       <a class="uk-position-cover uk-flex uk-flex-center uk-flex-middle" href="#" title="#"><img data-src="https://picsum.photos/id/237/795/525/" alt="#" uk-cover uk-img="target: !.uk-slideshow-items" data-width data-height></a>
                       <div class="pt-0 uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                        <p class="p-2 mb-2 mb-lg-0 text-white">推給這，滿女興要廣福汽政然制中且美去</p>
+                        <h2 class="fontSize1! p-2 mb-2 mb-lg-0 text-white">推給這，滿女興要廣福汽政然制中且美去</h2>
                       </div>
                     </li>
                     <li class="bg-black">
                       <a class="uk-position-cover uk-flex uk-flex-center uk-flex-middle" href="#" title="#"><img data-src="https://picsum.photos/id/238/795/525/" alt="#" uk-cover uk-img="target: !.uk-slideshow-items" data-width data-height></a>
                       <div class="pt-0 uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                        <p class="p-2 mb-2 mb-lg-0 text-white">可花還不境表分回很難評病定行明亮始</p>
+                        <h2 class="fontSize1! p-2 mb-2 mb-lg-0 text-white">可花還不境表分回很難評病定行明亮始</h2>
                       </div>
                     </li>
                     <li class="bg-black">
                       <a class="uk-position-cover uk-flex uk-flex-center uk-flex-middle" href="#" title="#"><img data-src="https://picsum.photos/id/239/795/525/" alt="#" uk-cover uk-img="target: !.uk-slideshow-items" data-width data-height></a>
                       <div class="pt-0 uk-overlay uk-overlay-primary uk-position-bottom uk-text-center">
-                        <p class="p-2 mb-2 mb-lg-0 text-white">做認要打自的有去集心日</p>
+                        <h2 class="fontSize1! p-2 mb-2 mb-lg-0 text-white">做認要打自的有去集心日</h2>
                       </div>
                     </li>
                   </ul>
                   <a class="px-lg-5 uk-width-1-5 uk-position-left uk-flex uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous" aria-label="previous" title="上一張圖"><span class="sr-only">上一張圖</span></a>
-                  <a class="px-lg-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next"><span class="sr-only">下一張圖</span></a>
+                  <a class="px-lg-5 uk-width-1-5 uk-position-right uk-flex uk-flex-right uk-flex-middle uk-slidenav-large uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next" aria-label="next" title="下一張圖"><span class="sr-only">下一張圖</span></a>
                   <div class="uk-position-bottom-center uk-position-small">
                     <ul class="uk-dotnav">
                       <li uk-slideshow-item="0"><a href="https://www.google.com.tw/" onfocus="slideShowFocus('#slideshow', '#slideshow .uk-dotnav a', this)" onkeydown="enterOpenUrl('_blank', this, event)">Banner1</a>
@@ -407,8 +404,8 @@
                       </div>
                       <div class="px-2 py-0 uk-card-body">
                         <h3 class="fontSize1 lineHeight_normal mb-1 mb-lg-2 px-1 font-weight-bold uk-card-title"><span class="cht">陳大明</span><span class="eng">Shih-Pu Wang</span></h3>
-                        <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                        <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span></p>
+                        <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                        <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span></p>
                       </div>
                     </div>
                   </div>

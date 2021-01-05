@@ -302,7 +302,16 @@ img[src=""] {display: none;}
 a:not(:last-child):not(:only-of-type):not([class*=uk-position-]), span:not(:last-child):not(:only-of-type):not([class*=uk-position-]), .child_margin a:not(:last-child):not([class*=uk-position-]) {margin-right: 5px;}
 a:not([class*="mr"]):not([class*="-margin"]):last-child, span:not([class*="mr"]):not([class*="-margin"]):last-child {margin-right: 0 !important;}
 *:last-child:not([class*=mb-]):not([class*=uk-position-]):not([class*=uk-margin-]) {margin-bottom: 0 !important;}
-
+.margin_y_all_child > :not(#footer), .margin_y_all_child-even > :nth-child(even):not(#footer) {
+    margin-bottom: 5px;
+}
+.margin_y_all_child-m > :not(#footer), .margin_y_all_child-even-m > :nth-child(even):not(#footer) {
+    margin-bottom: 10px;
+}
+.margin_y_all_child-l > :not(#footer), .margin_y_all_child-even-l > :nth-child(even):not(#footer) {
+    margin-bottom: 15px;
+}
+    
 /* List */
 ol, ul {padding-left: 1em;}
 ul.listNoStyle {padding: 0; list-style: none;}
@@ -363,11 +372,42 @@ ol.listDecimalCh {list-style-type: cjk-ideographic;}
 .min_width-1\/3\! {
     width: calc(100%/3) !important;
 }
+.min_width-2\/3\! {
+    width: calc(100%*2/3) !important;
+}
+.min_width-1\/4\! {
+    width: calc(100%/4) !important;
+}
 @media (min-width: 640px) {
     .min_width-1\/3\!\@s {
         width: calc(100%/3) !important;
     }
+    .min_width-2\/3\!\@s {
+        width: calc(100%*2/3) !important;
+    }
     .min_width-1\/4\!\@s {
+        width: calc(100%/4) !important;
+    }
+}
+@media (min-width: 960px) {
+    .min_width-1\/3\!\@m {
+        width: calc(100%/3) !important;
+    }
+    .min_width-2\/3\!\@m {
+        width: calc(100%*2/3) !important;
+    }
+    .min_width-1\/4\!\@m {
+        width: calc(100%/4) !important;
+    }
+}
+@media (min-width: 1200px) {
+    .min_width-1\/3\!\@l {
+        width: calc(100%/3) !important;
+    }
+    .min_width-2\/3\!\@l {
+        width: calc(100%*2/3) !important;
+    }
+    .min_width-1\/4\!\@l {
         width: calc(100%/4) !important;
     }
 }
@@ -861,6 +901,9 @@ a[class*=uk-slidenav]:hover, .uk-modal-dialog-lightbox .uk-lightbox-content .uk-
 }
 .uk-offcanvas a * {
     color: white;
+}
+.uk-form-small:not(textarea):not([multiple]):not([size]) {
+    line-height: 1;
 }
 /* End Uikit 3 Style
 ---------------------------------------------------- */

@@ -45,10 +45,19 @@
             </div>
             <div class="px-2 px-md-4 uk-container" uk-navbar>
               <div class="w-100 uk-navbar-left">
-                <h1 class="py-2 w-100 text-center"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+                <h1 class="py-1 py-lg-2 w-100 flex center" data-uk-margin>
+                  <div class="logo"><a class="w-100 flex center" href="index.html" title="回主網站首頁"><img src="img/blank.gif" alt="Logo"></a></div>
+                  <div class="vline"></div>
+                  <div class="logo_txt flex align-items-center">
+                    <a class="d-block" href="#">
+                      <div class="logo_cht font-weight-bold text-dark">急診醫學部</div>
+                      <div class="logo_eng font-weight-bold text-dark uk-visible@s">Emergency Medicine Department</div>
+                    </a>
+                  </div>
+                </h1>
               </div>
               <div class="uk-hidden@m uk-navbar-right">
-                <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
+                <button class="color_primary pl-0 pr-0 flex justify-content-end uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
               </div>
             </div>
           </div>
@@ -243,7 +252,7 @@
           <li hidden><a href="#">訊息專區</a></li>
           <li><span>檔案下載</span></li>
         </ul>
-        <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
+        <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#L" id="AL" name="L" title="左側選單" accesskey="L" style="left:-30px">:::</a></div>
         <div class="mb-sm-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 300">
           <div class="uk-grid-medium" uk-grid>
             <div class="uk-width-1-3@m uk-width-1-4@l">
@@ -278,7 +287,8 @@
               </div>
             </div>
             <div class="uk-width-expand@m">
-              <div class="mb-3 w-100 uk-inline">
+                <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
+                <div class="mb-3 w-100 uk-inline">
                 <h2 class="btmline mb-1 text-justify">檔案下載<small class="mt-2 uk-float-right"><a class="remove_underline" href="#"><i class="mr-1 fas fa-angle-left"></i>回列表</a></small></h2>
               </div>
               <form>
@@ -300,7 +310,7 @@
                       <ul class="uk-pagination uk-flex-center" uk-margin>
                         <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
                         <li class="uk-width-1-3 uk-width-1-4@s uk-width-1-6@m">
-                          <select class="uk-select uk-form-small">
+                          <select class="uk-select uk-form-small" title="頁碼">
                             <option>1</option>
                             <option>2</option>
                           </select>
@@ -338,7 +348,7 @@
                       <ul class="uk-pagination uk-flex-center" uk-margin>
                         <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
                         <li class="uk-width-1-3 uk-width-1-4@s uk-width-1-6@m">
-                          <select class="uk-select uk-form-small">
+                          <select class="uk-select uk-form-small" title="頁碼">
                             <option>1</option>
                             <option>2</option>
                           </select>

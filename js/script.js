@@ -176,18 +176,32 @@ if (oneExist('.ckeditor table')) {
   tableWidth('.ckeditor table')
 }
 
+// function setAttributes(el, attrs) {
+//   document.querySelectorAll(el).forEach( key1 => Object.keys(attrs).forEach(key2 => key1.setAttribute(key2, attrs[key2])))
+//   console.log(attrs[key2])
+// }
+// setAttributes('.listDot.uk-accordion>li>a', {"title": "展開"})
+// setAttributes('.listDot.uk-accordion>li.uk-open>a', {"title": "縮起"})
+
 //Set the "alt" attribute to all icons
-function iconAlt(el) {
+// function iconAlt(el) {
+//   var el = document.querySelectorAll(el)
+//   for (var i = 0;i < el.length;i++) {
+//     el[i].setAttribute("alt", "")
+//     // console.log(el.length)
+//   }
+// }
+function setAttr(el, attr) {
   var el = document.querySelectorAll(el)
+  // var attrs = []
   for (var i = 0;i < el.length;i++) {
-    el[i].setAttribute("alt", "")
-    // console.log(el.length)
+    el[i].setAttribute(attr[0], attr[1])
+    console.log(el.length)
   }
 }
-if (oneExist('[class*=fa-]')) {
-  iconAlt('[class*=fa-]')
-  // console.log(oneExist('[class*=fa-]'))
-}
+setAttr('[class*=fa-]', ["alt", ""])
+setAttr('.listDot>li>a', ["title", "展開"])
+setAttr('.listDot>li.uk-open>a', ["title", "縮起"])
 
 if (allExist('.list_tabs .uk-open')) {
   toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')

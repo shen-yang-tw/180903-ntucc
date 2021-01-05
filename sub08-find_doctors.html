@@ -45,10 +45,19 @@
             </div>
             <div class="px-2 px-md-4 uk-container" uk-navbar>
               <div class="w-100 uk-navbar-left">
-                <h1 class="py-2 w-100 text-center"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+                <h1 class="py-1 py-lg-2 w-100 flex center" data-uk-margin>
+                  <div class="logo"><a class="w-100 flex center" href="index.html" title="回主網站首頁"><img src="img/blank.gif" alt="Logo"></a></div>
+                  <div class="vline"></div>
+                  <div class="logo_txt flex align-items-center">
+                    <a class="d-block" href="#">
+                      <div class="logo_cht font-weight-bold text-dark">急診醫學部</div>
+                      <div class="logo_eng font-weight-bold text-dark uk-visible@s">Emergency Medicine Department</div>
+                    </a>
+                  </div>
+                </h1>
               </div>
               <div class="uk-hidden@m uk-navbar-right">
-                <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
+                <button class="color_primary pl-0 pr-0 flex justify-content-end uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
               </div>
             </div>
           </div>
@@ -242,7 +251,7 @@
           <li><a href="#">首頁</a></li>
           <li><span>尋找醫師</span></li>
         </ul>
-        <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
+        <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#L" id="AL" name="L" title="左側選單" accesskey="L" style="left:-30px">:::</a></div>
         <div class="mb-sm-2 uk-card uk-card-small uk-card-default uk-card-body" uk-height-viewport="min-height: 300">
           <div class="uk-grid-medium" uk-grid>
             <div class="uk-width-1-3@m uk-width-1-4@l">
@@ -278,35 +287,16 @@
             </div>
             <!-- /sidemenu -->
             <div class="uk-width-expand@m">
-              <div class="mb-3 w-100 uk-inline">
+                <div class="position-relative"><a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#C" id="AC" name="C" title="中央內容區塊" accesskey="C" style="left:-30px">:::</a></div>
+                <div class="mb-3 w-100 uk-inline">
                 <h2 class="btmline mb-1 text-justify">尋找醫師</h2>
               </div>
               <form>
                 <div id="content" uk-margin="margin: uk-margin-top">
                   <div class="uk-grid uk-grid-small" uk-grid>
-                    <div class="uk-width-1-2@m uk-width-1-3@xl">
+                    <div class="uk-width-2-3@s uk-width-3-4@m">
                       <label for="search_input" class="sr-only">搜尋</label>
                       <input id="search_input" class="uk-input" type="text" placeholder="請輸入姓名、科部或病症">
-                    </div>
-                    <div class="uk-width-1-4@m uk-width-expand@l">
-                      <!-- <label class="sr-only" for="select_dep">選項</label> -->
-                      <select id="select_dep" class="uk-select" title="選項">
-                        <option value="0" selected>-或選擇看診部別-</option>
-                        <option value="綜合內科部">綜合內科部</option>
-                        <option value="外科部">外科部</option>
-                      </select>
-                    </div>
-                    <div class="uk-width-1-4@m uk-width-expand@l">
-                      <select data-div="綜合內科部" class="select_div uk-select" title="選項" disabled>
-                        <option value="0" selected>-或選擇看診科別-</option>
-                        <option value="內科">內科</option>
-                        <option value="考東錢">考東錢</option>
-                      </select>
-                      <select data-div="外科部" class="select_div uk-select" title="選項" disabled hidden>
-                        <option value="0" selected>-或選擇看診科別-</option>
-                        <option value="外科">外科</option>
-                        <option value="慢出招代何三">慢出招代何三</option>
-                      </select>
                     </div>
                     <div class="uk-width-expand"><button class="btn_primary w-100 uk-button uk-button-primary">搜尋</button></div>
                     <div class="uk-width-1-1" uk-filter="target: .list">
@@ -340,7 +330,7 @@
                           <ul class="uk-pagination uk-flex-center" uk-margin>
                             <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
                             <li class="uk-width-1-3 uk-width-1-4@s uk-width-1-6@m">
-                              <select class="uk-select uk-form-small">
+                              <select class="uk-select uk-form-small" title="頁碼">
                                 <option>1</option>
                                 <option>2</option>
                               </select>
@@ -355,8 +345,8 @@
                                 </div>
                                 <div class="uk-card-body">
                                   <h3 class="fontSize1 font-weight-bold uk-card-title"><span class="cht">王小明</span><span class="eng">Shih-Pu Wang</span></h3>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">肺癌</span><span class="mr-3">綜合內科部</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">肺癌</span><span class="mr-3">綜合內科部</span></p>
                                   <div class="w-100 uk-inline">
                                     <button class="w-100 bg-secondary text-white mt-2 uk-button uk-button-small uk-button-primary" type="button">更多</button>
                                     <div class="uk-dropdown-small" uk-dropdown>
@@ -377,8 +367,8 @@
                                 </div>
                                 <div class="uk-card-body">
                                   <h3 class="fontSize1 font-weight-bold uk-card-title"><span class="cht">陳大明</span><span class="eng">Shih-Pu Wang</span></h3>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">乳癌</span><span class="mr-3">血液腫瘤部</span></p>
                                   <div class="w-100 uk-inline">
                                     <button class="w-100 bg-secondary text-white mt-2 uk-button uk-button-small uk-button-primary" type="button">更多</button>
                                     <div class="uk-dropdown-small" uk-dropdown>
@@ -399,8 +389,8 @@
                                 </div>
                                 <div class="uk-card-body">
                                   <h3 class="fontSize1 font-weight-bold uk-card-title"><span class="cht">李小朋</span><span class="eng">Shih-Pu Wang</span></h3>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
                                   <div class="w-100 uk-inline">
                                     <button class="w-100 bg-secondary text-white mt-2 uk-button uk-button-small uk-button-primary" type="button">更多</button>
                                     <div class="uk-dropdown-small" uk-dropdown>
@@ -421,8 +411,8 @@
                                 </div>
                                 <div class="uk-card-body">
                                   <h3 class="fontSize1 font-weight-bold uk-card-title"><span class="cht">歐大大</span><span class="eng">Shih-Pu Wang</span></h3>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">肝癌</span><span class="mr-3">血液腫瘤部</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">肝癌</span><span class="mr-3">血液腫瘤部</span></p>
                                   <div class="w-100 uk-inline">
                                     <button class="w-100 bg-secondary text-white mt-2 uk-button uk-button-small uk-button-primary" type="button">更多</button>
                                     <div class="uk-dropdown-small" uk-dropdown>
@@ -443,8 +433,8 @@
                                 </div>
                                 <div class="uk-card-body">
                                   <h3 class="fontSize1 font-weight-bold uk-card-title"><span class="cht">劉小朋</span><span class="eng">Shih-Pu Wang</span></h3>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
                                   <div class="w-100 uk-inline">
                                     <button class="w-100 bg-secondary text-white mt-2 uk-button uk-button-small uk-button-primary" type="button">更多</button>
                                     <div class="uk-dropdown-small" uk-dropdown>
@@ -465,8 +455,8 @@
                                 </div>
                                 <div class="uk-card-body">
                                   <h3 class="fontSize1 font-weight-bold uk-card-title"><span class="cht">陶小朋</span><span class="eng">Shih-Pu Wang</span></h3>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
-                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-user-md fa-fw" title="職稱"></i><span class="mr-3">主治醫師</span><span class="mr-3">主治醫師</span></p>
+                                  <p class="m-0 uk-text-truncate"><i class="fas fa-notes-medical fa-fw" title="專長"></i><span class="mr-3">一般腫瘤</span><span class="mr-3">腫瘤內科部</span></p>
                                   <div class="w-100 uk-inline">
                                     <button class="w-100 bg-secondary text-white mt-2 uk-button uk-button-small uk-button-primary" type="button">更多</button>
                                     <div class="uk-dropdown-small" uk-dropdown>
@@ -485,7 +475,7 @@
                           <ul class="uk-pagination uk-flex-center" uk-margin>
                             <li class="uk-disabled uk-flex uk-flex-middle"><a class="px-1 uk-flex uk-flex-middle" href="#" title="上一頁"><span class="mr-2" uk-pagination-previous aria-label="上一頁"></span><span class="uk-visible@s">上一頁</span></a></li>
                             <li class="uk-width-1-3 uk-width-1-4@s uk-width-1-6@m">
-                              <select class="uk-select uk-form-small">
+                              <select class="uk-select uk-form-small" title="頁碼">
                                 <option>1</option>
                                 <option>2</option>
                               </select>

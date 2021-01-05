@@ -23,13 +23,28 @@ a.color_primary:hover *,
 .hover_color_secondary:hover,
 ul.hover_color_secondary>li>a:focus,
 ul.hover_color_secondary>li>a:hover {
-  color: #06805b !important;
+  color: #016a77 !important;
 }
 
 a.color_secondary:hover,
 a.color_secondary:hover *,
 .color_secondary a:hover {
+  color: #005b68 !important;
+}
+
+.subsite .color_secondary,
+.subsite .color_secondary *,
+.hover_color_secondary:focus,
+.hover_color_secondary:hover,
+ul.hover_color_secondary>li>a:focus,
+ul.hover_color_secondary>li>a:hover {
   color: #06805b !important;
+}
+
+.subsite a.color_secondary:hover,
+.subsite a.color_secondary:hover *,
+.subsite .color_secondary a:hover {
+  color: #05684a !important;
 }
 
 .color_darkestGrey,
@@ -75,6 +90,20 @@ ul.hover_bg_secondary>li>a:focus,
 ul.hover_bg_secondary>li>a:hover,
 ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
   color           : white;
+  background-color: #016a77 !important;
+}
+
+.subsite .bg_secondary,
+.subsite .subsite .btn_secondary,
+.subsite .btn_hover_secondary.uk-active,
+.subsite .btn_hover_secondary:hover,
+.subsite .hover_bg_secondary:hover,
+.subsite .hover_secondary li>a:hover,
+.subsite .hover_secondary li.uk-active>a,
+.subsite ul.hover_bg_secondary>li>a:focus,
+.subsite ul.hover_bg_secondary>li>a:hover,
+.subsite ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
+  color           : white;
   background-color: #068660 !important;
 }
 
@@ -98,6 +127,11 @@ ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
 
 .btn_secondary:focus,
 .btn_secondary:hover {
+  background-color: #005b68 !important;
+}
+
+.subsite .btn_secondary:focus,
+.subsite .btn_secondary:hover {
   background-color: #06805b !important;
 }
 
@@ -117,6 +151,15 @@ ol.listDecimalRow.listBadge.listBadgeSecondary>li:before {
 .border_secondary li a:hover,
 .border_hover_secondary:focus,
 .border_hover_secondary:hover {
+  border-color: #016a77 !important;
+}
+
+.subsite .border_secondary,
+.subsite .border_secondary li[class*=active] a,
+.subsite .border_secondary li a[class*=open],
+.subsite .border_secondary li a:hover,
+.subsite .border_hover_secondary:focus,
+.subsite .border_hover_secondary:hover {
   border-color: #068660 !important;
 }
 
@@ -397,6 +440,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ckeditor [style*="標楷體"] {
   font-family: 標楷體 !important;
 }
+
 .ckeditor [style*="細明體"] {
   font-family: 細明體 !important;
 }
@@ -406,11 +450,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .ckeditor table {
-  width          : 100%;
+  width             : 100%;
   /* margin         : 20px 0; */
-  border-collapse: inherit;
-  /* word-break : break-all;
-  white-space: normal; */
+  border-collapse   : inherit;
+  /* word-break     : break-all;
+  white-space       : normal; */
 }
 
 .ckeditor table[border]:not(.uk-table) {
@@ -708,7 +752,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .ckeditor .uk-subnav-pill {
   border-bottom: 1px solid #f8f8f8;
   margin-bottom: 10px;
-  margin-left: 0;
+  margin-left  : 0;
 }
 
 .ckeditor .uk-subnav-pill a {
@@ -729,7 +773,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /*----Fix Bootstrap----*/
 caption {
-  caption-side  : inherit;
+  caption-side: inherit;
 }
 
 .ckeditor.table td,
@@ -737,9 +781,11 @@ caption {
 .ckeditor.table thead th {
   border: inherit;
 }
+
 /*----End Fix Bootstrap----*/
 
-.ckeditor .table_center th, .ckeditor .table_center td {
+.ckeditor .table_center th,
+.ckeditor .table_center td {
   text-align: center;
 }
 
@@ -750,14 +796,18 @@ caption {
 /* End Editor
 ---------------------------------------------------- */
 
-.list_tabs > li.active > a, .list_tabs > li.active > a:focus, .list_tabs > li.active > a:hover, .list_tabs > li .active > a, .list_tabs > li .uk-active > a {
+.list_tabs>li.active>a,
+.list_tabs>li.active>a:focus,
+.list_tabs>li.active>a:hover,
+.list_tabs>li .active>a,
+.list_tabs>li .uk-active>a {
   background-color: #31818a !important;
-  color: white !important;
+  color           : white !important;
 }
 
 h2.btmline.text-justify {
   text-align: left !important;
-  font-size: 1.2rem !important;
+  font-size : 1.2rem !important;
 }
 
 @media (min-width: 960px) {
@@ -782,9 +832,13 @@ h2.btmline.text-justify {
 .bg_gradient {
   background: linear-gradient(to right, #068660 0%, #2d747c 100%);
 }
+
 .bg_gradient * {
   color: white;
 }
+
+/* Sub site
+---------------------------------------------------- */
 /* .subsite .list, .subsite .list .uk-card {
   position: relative;
 }
@@ -795,33 +849,104 @@ h2.btmline.text-justify {
   z-index: 1;
 } */
 
-/* Sub site
----------------------------------------------------- */
-
 /* .subsite header {
   position: relative;
 } */
+
+.subsite .logo img {
+  background: url("../img/logo.svg#svgView(preserveAspectRatio(xMinYMid))") left center no-repeat;
+  height    : 40px;
+}
+
+.subsite .logo img,
+.subsite .logo>a {
+  width: calc(248/50*40px);
+}
+
+.subsite .logo,
+.subsite .logo_txt {
+  width: 50%;
+}
+
+.subsite .logo_txt a:hover {
+  text-decoration: none;
+}
+
+.subsite .logo_txt a:hover>* {
+  color: black !important;
+}
+
+.subsite .logo_cht {
+  font-size: 1rem;
+}
+
+.subsite .vline {
+  width           : 3px;
+  min-height      : 40px;
+  margin          : 0 10px;
+  background-color: black;
+}
+
+.subsite .logo_eng {
+  font-size: 0.6rem;
+}
+
+@media (min-width: 640px) {
+
+  .subsite .logo,
+  .subsite .logo_txt {
+    width: auto;
+  }
+
+  .subsite .logo_cht {
+    font-size: 1.2rem;
+  }
+
+  .subsite .logo_eng {
+    font-size: 0.8rem;
+  }
+}
+
+.subsite .center {
+  justify-content: left;
+  /* align-items : center!important; */
+}
+
+@media (min-width: 960px) {
+  .subsite .center {
+    justify-content: center;
+  }
+}
+
+.subsite .uk-navbar-toggle {
+  min-width : 40px;
+  min-height: 40px;
+}
+
 .subsite header nav::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  content        : "";
+  display        : block;
+  position       : absolute;
+  width          : 100%;
+  height         : 100%;
   background     : url(../img/bg_header.jpg) no-repeat center center;
   background-size: cover;
-  opacity: .5;
+  opacity        : .5;
 }
+
 @media (min-width: 640px) {
   .subsite .doctor .thisRatio1_1 {
     max-width: 300px;
   }
 }
+
 /* .subsite header nav>:first-child {
   background-color: rgba(255, 255, 255, 0) !important;
 } */
 .subsite .question {
   overflow-y: auto;
 }
+
 /* .subsite .doctor.overflow_hidden {
   overflow: inherit;
   padding-bottom: 0;
