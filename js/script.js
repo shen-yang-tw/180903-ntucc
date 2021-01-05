@@ -199,7 +199,7 @@ function setAttr(el, attr) {
     console.log(el.length)
   }
 }
-setAttr('[class*=fa-]', ["alt", ""])
+setAttr('[class*=fa-]', ["title", ""])
 setAttr('.listDot>li>a', ["title", "展開"])
 setAttr('.listDot>li.uk-open>a', ["title", "縮起"])
 
