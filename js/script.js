@@ -176,32 +176,37 @@ if (oneExist('.ckeditor table')) {
   tableWidth('.ckeditor table')
 }
 
-// function setAttributes(el, attrs) {
-//   document.querySelectorAll(el).forEach( key1 => Object.keys(attrs).forEach(key2 => key1.setAttribute(key2, attrs[key2])))
-//   console.log(attrs[key2])
-// }
-// setAttributes('.listDot.uk-accordion>li>a', {"title": "展開"})
-// setAttributes('.listDot.uk-accordion>li.uk-open>a', {"title": "縮起"})
-
-//Set the "alt" attribute to all icons
-// function iconAlt(el) {
-//   var el = document.querySelectorAll(el)
-//   for (var i = 0;i < el.length;i++) {
-//     el[i].setAttribute("alt", "")
-//     // console.log(el.length)
-//   }
-// }
+//<a class="fontSize1 pb-1 uk-accordion-title" href="#" onclick="toggleAttr(event, '', 'title', '展開', '縮起')">
+function toggleAttr(event, el, attr, val1, val2) {
+  if (event.currentTarget.getAttribute(attr) == val1) {
+    event.currentTarget.removeAttribute(attr)
+    event.currentTarget.setAttribute(attr, val2)
+    // console.log(event.currentTarget.getAttribute(attr))
+  } else {
+    event.currentTarget.setAttribute(attr, val1)
+  }
+  if (el != '') {
+    var el = document.querySelectorAll(el)
+    for (var i = 0;i < el.length;i++) {
+      if (el.getAttribute(attr) == val1) {
+        el.setAttribute(attr, val2)
+      } else {
+        el.setAttribute(attr, val1)
+      }
+    }
+  }
+}
 function setAttr(el, attr) {
   var el = document.querySelectorAll(el)
   // var attrs = []
   for (var i = 0;i < el.length;i++) {
     el[i].setAttribute(attr[0], attr[1])
-    console.log(el.length)
+    // console.log(el.length)
   }
 }
-setAttr('[class*=fa-]', ["title", ""])
-setAttr('.listDot>li>a', ["title", "展開"])
-setAttr('.listDot>li.uk-open>a', ["title", "縮起"])
+setAttr('[class*=fa-]', ['title', ''])
+setAttr('.listDot>li>a', ['title', '展開'])
+setAttr('.listDot>li.uk-open>a', ['title', '縮起'])
 
 if (allExist('.list_tabs .uk-open')) {
   toggleAllClass(findAll('.list_tabs .uk-open .toggle'), 'hidden')
