@@ -179,7 +179,6 @@ if (oneExist('.ckeditor table')) {
 //<a class="fontSize1 pb-1 uk-accordion-title" href="#" onclick="toggleAttr(event, '', 'title', '展開', '縮起')">
 function toggleAttr(event, el, attr, val1, val2) {
   if (event.currentTarget.getAttribute(attr) == val1) {
-    event.currentTarget.removeAttribute(attr)
     event.currentTarget.setAttribute(attr, val2)
     // console.log(event.currentTarget.getAttribute(attr))
   } else {
