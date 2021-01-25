@@ -302,6 +302,42 @@ img[src=""] {display: none;}
 a:not(:last-child):not(:only-of-type):not([class*=uk-position-]), span:not(:last-child):not(:only-of-type):not([class*=uk-position-]), .child_margin a:not(:last-child):not([class*=uk-position-]) {margin-right: 5px;}
 a:not([class*="mr"]):not([class*="-margin"]):last-child, span:not([class*="mr"]):not([class*="-margin"]):last-child {margin-right: 0 !important;}
 *:last-child:not([class*=mb-]):not([class*=uk-position-]):not([class*=uk-margin-]) {margin-bottom: 0 !important;}
+.margin_x_child > :not(:last-child) {
+margin-right: 5px;
+}
+
+.margin_x_child-m > :not(:last-child) {
+margin-right: 10px;
+}
+
+.margin_x_child-l > :not(:last-child) {
+margin-right: 15px;
+}
+
+.margin_y_child > :not(:last-child):not(#footer), .margin_y_child-even > :nth-child(even):not(:last-child):not(#footer) {
+margin-bottom: 5px;
+}
+
+.margin_y_child-m > :not(:last-child):not(#footer), .margin_y_child-even-m > :nth-child(even):not(:last-child):not(#footer) {
+margin-bottom: 10px;
+}
+
+.margin_y_child-l > :not(:last-child):not(#footer), .margin_y_child-even-l > :nth-child(even):not(:last-child):not(#footer) {
+margin-bottom: 15px;
+}
+
+.margin_y_all_child > :not(#footer), .margin_y_all_child-even > :nth-child(even):not(#footer) {
+margin-bottom: 5px;
+}
+
+.margin_y_all_child-m > :not(#footer), .margin_y_all_child-even-m > :nth-child(even):not(#footer) {
+margin-bottom: 10px;
+}
+
+.margin_y_all_child-l > :not(#footer), .margin_y_all_child-even-l > :nth-child(even):not(#footer) {
+margin-bottom: 15px;
+}
+  
 .margin_y_all_child > :not(#footer), .margin_y_all_child-even > :nth-child(even):not(#footer) {
     margin-bottom: 5px;
 }
@@ -311,7 +347,155 @@ a:not([class*="mr"]):not([class*="-margin"]):last-child, span:not([class*="mr"])
 .margin_y_all_child-l > :not(#footer), .margin_y_all_child-even-l > :nth-child(even):not(#footer) {
     margin-bottom: 15px;
 }
-    
+@media (min-width: 640px) {
+    .margin_x_child\@s > :not(:last-child) {
+      margin-right: 5px;
+    }
+  
+    .margin_x_child-m\@s > :not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .margin_x_child-l\@s > :not(:last-child) {
+      margin-right: 15px;
+    }
+  
+    .margin_y_child\@s > :not(:last-child):not(#footer), .margin_y_child-even\@s > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_child-m\@s > :not(:last-child):not(#footer), .margin_y_child-even-m\@s > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_child-l\@s > :not(:last-child):not(#footer), .margin_y_child-even-l\@s > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 15px;
+    }
+  
+    .margin_y_all_child\@s > :not(#footer), .margin_y_all_child-even\@s > :nth-child(even):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_all_child-m\@s > :not(#footer), .margin_y_all_child-even-m\@s > :nth-child(even):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_all_child-l\@s > :not(#footer), .margin_y_all_child-even-l\@s > :nth-child(even):not(#footer) {
+      margin-bottom: 15px;
+    }
+}
+@media (min-width: 960px) {
+    .margin_x_child\@m > :not(:last-child) {
+      margin-right: 5px;
+    }
+  
+    .margin_x_child-m\@m > :not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .margin_x_child-l\@m > :not(:last-child) {
+      margin-right: 15px;
+    }
+  
+    .margin_y_child\@m > :not(:last-child):not(#footer), .margin_y_child-even\@m > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_child-m\@m > :not(:last-child):not(#footer), .margin_y_child-even-m\@m > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_child-l\@m > :not(:last-child):not(#footer), .margin_y_child-even-l\@m > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 15px;
+    }
+  
+    .margin_y_all_child\@m > :not(#footer), .margin_y_all_child-even\@m > :nth-child(even):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_all_child-m\@m > :not(#footer), .margin_y_all_child-even-m\@m > :nth-child(even):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_all_child-l\@m > :not(#footer), .margin_y_all_child-even-l\@m > :nth-child(even):not(#footer) {
+      margin-bottom: 15px;
+    }
+}
+@media (min-width: 1200px) {
+    .margin_x_child\@l > :not(:last-child) {
+      margin-right: 5px;
+    }
+  
+    .margin_x_child-m\@l > :not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .margin_x_child-l\@l > :not(:last-child) {
+      margin-right: 15px;
+    }
+  
+    .margin_y_child\@l > :not(:last-child):not(#footer), .margin_y_child-even\@l > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_child-m\@l > :not(:last-child):not(#footer), .margin_y_child-even-m\@l > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_child-l\@l > :not(:last-child):not(#footer), .margin_y_child-even-l\@l > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 15px;
+    }
+  
+    .margin_y_all_child\@l > :not(#footer), .margin_y_all_child-even\@l > :nth-child(even):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_all_child-m\@l > :not(#footer), .margin_y_all_child-even-m\@l > :nth-child(even):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_all_child-l\@l > :not(#footer), .margin_y_all_child-even-l\@l > :nth-child(even):not(#footer) {
+      margin-bottom: 15px;
+    }
+}
+@media (min-width: 1600px) {
+    .margin_x_child\@xl > :not(:last-child) {
+      margin-right: 5px;
+    }
+  
+    .margin_x_child-m\@xl > :not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .margin_x_child-l\@xl > :not(:last-child) {
+      margin-right: 15px;
+    }
+  
+    .margin_y_child\@xl > :not(:last-child):not(#footer), .margin_y_child-even\@xl > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_child-m\@xl > :not(:last-child):not(#footer), .margin_y_child-even-m\@xl > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_child-l\@xl > :not(:last-child):not(#footer), .margin_y_child-even-l\@xl > :nth-child(even):not(:last-child):not(#footer) {
+      margin-bottom: 15px;
+    }
+  
+    .margin_y_all_child\@xl > :not(#footer), .margin_y_all_child-even\@xl > :nth-child(even):not(#footer) {
+      margin-bottom: 5px;
+    }
+  
+    .margin_y_all_child-m\@xl > :not(#footer), .margin_y_all_child-even-m\@xl > :nth-child(even):not(#footer) {
+      margin-bottom: 10px;
+    }
+  
+    .margin_y_all_child-l\@xl > :not(#footer), .margin_y_all_child-even-l\@xl > :nth-child(even):not(#footer) {
+      margin-bottom: 15px;
+    }
+}
+  
 /* List */
 ol, ul {padding-left: 1em;}
 ul.listNoStyle {padding: 0; list-style: none;}
