@@ -807,6 +807,29 @@ caption {
   margin: 20px 0;
 }
 
+.ckeditor {
+  position: relative;
+}
+.ckeditor .letter1 {
+  background-image: url(../img/letterbg1.png);
+  background-position: 50% 100%;
+  background-color: #f9fdfd;
+  padding: 20px;
+  padding-bottom: 40%;
+}
+.ckeditor .letter2 {
+  background-image: url(../img/letterbg2top.png), url(../img/letterbg2btm.png);
+  background-position: 50% 0%, 50% 100%;
+  background-color: #fcf8fa;
+  padding: 20px;
+  padding-bottom: 15%;
+}
+@media (min-width: 960px) {
+  .ckeditor .letter2 {
+    padding: 10% 20%;
+  }
+}
+
 /* End Editor
 ---------------------------------------------------- */
 
