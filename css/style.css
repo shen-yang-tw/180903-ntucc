@@ -1001,6 +1001,36 @@ h2.btmline.text-justify {
     max-height: inherit;
   }
 }
+
+.uk-logo>img, footer>div:first-child img  {
+  max-height: 50px;
+}
+/* .uk-navbar-left img {
+  width: 100px;
+} */
+footer>div:first-child img {
+  width: 330px;
+}
+@media (min-width:960px) {
+  .uk-navbar-left img {
+    width: 150px;
+  }
+  .uk-navbar-right img {
+    width: 150px;
+  }
+  .uk-logo>img, footer>div:first-child img {
+    max-height: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .uk-navbar-right img {
+    width: 330px;
+  }
+  .uk-logo>img, footer>div:first-child img {
+    max-height: 80px;
+  }
+}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End of Style */
 
 

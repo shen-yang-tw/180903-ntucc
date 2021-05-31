@@ -37,9 +37,12 @@
               <div class="px-2 px-md-4 uk-container" uk-navbar>
                 <a class="remove_underline px-1 uk-position-absolute uk-visible@m" href="#U" id="AU" name="U" title="上方功能區塊" accesskey="U" style="left:0; margin-top:-2px;">:::</a>
                 <div class="uk-navbar-left">
-                  <h1 class="py-2"><a title="#" class="px-0 uk-navbar-item uk-logo"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a></h1>
+                  <h1 class="py-2">
+                    <a title="#" class="px-0 uk-navbar-item uk-logo uk-hidden@m"><img src="img/logo_mobile.svg" width="330" height="65" alt="Logo"></a>
+                    <a title="#" class="px-0 uk-navbar-item uk-logo uk-visible@m"><img src="img/logo.svg" width="330" height="65" alt="Logo"></a>
+                  </h1>
                 </div>
-                <div class="uk-visible@m uk-navbar-right">
+                <div class="px-3 uk-visible@m uk-navbar">
                   <div class="h-100 uk-flex uk-flex-middle" uk-margin>
                     <span><a class="px-2" href="#">門診時間</a></span>
                     <span><a class="px-2" href="#">站內檢索</a></span>
@@ -50,6 +53,9 @@
                     <span class="btnFontSize btnFontSizeM bgBlack active"><button class="px-2 uk-button" title="適中字級">A</button></span>
                     <span class="btnFontSize btnFontSizeL bgBlack"><button class="px-2 uk-button" title="加大字級">A+</button></span>
                   </div>
+                </div>
+                <div class="uk-visible@m uk-navbar-right">
+                  <a title="#" class="uk-navbar-item uk-logo"><img src="img/logo2.svg" width="330" height="65" alt="Logo"></a>
                 </div>
                 <div class="uk-hidden@m uk-navbar-right">
                   <button class="color_primary pl-4 pr-0 uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas"><span class="sr-only">選單</span></button>
@@ -422,7 +428,7 @@
           </div>
           <footer class="uk-grid-small uk-grid-divider uk-child-width-expand uk-grid" uk-grid>
             <div class="uk-width-1-3@m uk-width-1-3@l uk-width-1-4@xl">
-              <img class="uk-width-1-3@s uk-width-1-1@m uk-width-4-5@xl" data-src="img/logo_white.svg" alt="台大癌醫中心醫院logo" uk-img>
+              <img class="uk-width-1-3@s uk-width-1-1@m uk-width-4-5@xl" data-src="img/logo2_white.svg" alt="台大癌醫中心醫院logo" uk-img>
               <div class="uk-margin" uk-margin>
                 <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-map-marker-alt fa-fw"></i>106 台北市大安區基隆路三段155巷57號</span>
                 <span class="hanging_indent w-100 mr-3"><i class="mr-1 fas fa-phone fa-fw"></i><strong>+ 886 2 2322-0322</strong></span>
